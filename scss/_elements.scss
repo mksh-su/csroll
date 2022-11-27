@@ -1,0 +1,245 @@
+.form {
+  &-input {
+    &-text {
+      background-color: $color-placeholder;
+      border: 1px solid $color-text-body;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      padding: 12px 16px;
+      border-radius: 8px;
+      color: white;
+      outline: none;
+      transition: 0.3s;
+
+      &::placeholder {
+        color: rgba($color-text-body, 0.5);
+      }
+
+      &:hover {
+        &::placeholder {
+          color: rgba($color-text-body, 1);
+        }
+      }
+
+      &:focus {
+        border-color: $color-lightblue;
+      }
+
+      &[disabled] {
+        color: rgba($color-text-body, 0.5);
+        border-color: $color-placeholder;
+      }
+
+      &-success {
+        border-color: $color-green;
+      }
+
+      &-error {
+        border-color: $color-red;
+      }
+    }
+  }
+}
+
+.hash-text {
+  background-color: $color-darkblue;
+  padding: 4px 8px;
+  font-size: 12px;
+  line-height: 120%;
+  font-weight: 600;
+  color: $color-icon;
+  border: 0;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  max-width: 195px;
+  overflow: auto;
+  transition: 0.3s;
+
+  &-icon {
+    margin-right: 6px;
+    width: 12px;
+    transition: 0.3s;
+
+    path {
+      stroke: $color-border;
+    }
+  }
+
+  &-content {
+    margin: 0;
+  }
+
+  &:hover {
+    color: $color-blue;
+    background-color: rgba($color-blue, 20%);
+
+    .hash-text-icon {
+      path {
+        stroke: $color-blue;
+      }
+    }
+  }
+
+  &:active {
+    color: rgba($color-blue, 50%);
+    background-color: rgba($color-blue, 20%);
+    .hash-text-icon {
+      path {
+        stroke: rgba($color-blue, 50%);
+      }
+    }
+  }
+}
+
+.ratio {
+  &-container {
+    display: flex;
+    align-items: center;
+  }
+  &-item {
+    color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 6px 14px;
+    display: inline-block;
+    margin-right: 10px;
+    transition: 0.3s;
+
+    &-gold {
+      border-color: $color-gold;
+
+      &:hover {
+        background-color: rgba($color-gold, 0.3);
+      }
+    }
+    &-green {
+      border-color: $color-green;
+
+      &:hover {
+        background-color: rgba($color-green, 0.3);
+      }
+    }
+    &-red {
+      border-color: $color-red;
+
+      &:hover {
+        background-color: rgba($color-red, 0.3);
+      }
+    }
+    &-purple {
+      border-color: $color-purple;
+
+      &:hover {
+        background-color: rgba($color-purple, 0.3);
+      }
+    }
+  }
+}
+
+.notification {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+
+  path {
+    transition: .3s;
+  }
+
+  &:hover {
+    path {
+      stroke: #97a7db;
+    }
+  }
+
+  &:active {
+    path {
+      stroke: white;
+    }
+  }
+
+  &-unread {
+    &:before {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      top: 3px;
+      right: -2px;
+      width: 5px;
+      height: 5px;
+      background: linear-gradient(45deg, #a03434 0%, #ff985e 100%);
+      border: 2px solid #1f2745;
+      display: inline-block;
+    }
+  }
+}
+
+.avatar {
+    background-color: $color-darkblue;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    overflow: hidden;
+
+    &-img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 40%;
+    }
+
+    &-l {
+        width: 64px;
+        height: 64px;
+    }
+
+    &-m {
+        width: 50px;
+        height: 50px;
+    }
+
+    &-s {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.note {
+    padding: 12px 24px;
+    background-color: $color-placeholder;
+    color: $color-lightblue;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 445px;
+
+    &-icon {
+        width: 30px;
+        margin-right: 20px;
+    }
+
+    &-problem, &-success, &-error {
+        color: white;
+    }
+
+    &-problem {
+        background-color: rgba($color-gold, 10%);
+    }
+
+    &-success {
+        background-color: rgba($color-green, 10%);
+    }
+
+    &-error {
+        background-color: rgba($color-red, 10%);
+    }
+}

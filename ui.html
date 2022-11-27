@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>UI</title>
+  </head>
+  <body>
+    <!-- typography -->
+    <h1 class="main-heading">Heading 1</h1>
+    <h2 class="sub-heading">Subtitle</h2>
+    <p class="text-body">Body-text</p>
+    <p class="text-small">Small-text</p>
+    <p class="text-tiny">Tiny-text</p>
+    <p class="text-smallest">Little-text</p>
+
+    <!-- buttons -->
+    <a href="" class="btn btn-primary btn-l">Кнопка</a>
+    <a href="" class="btn btn-primary btn-m">Кнопка</a>
+    <a href="" class="btn btn-primary btn-disabled btn-m">Кнопка</a>
+
+    <a href="" class="btn btn-secondary btn-l">Кнопка</a>
+    <a href="" class="btn btn-secondary btn-m">Кнопка</a>
+    <a href="" class="btn btn-secondary btn-disabled btn-m">Кнопка</a>
+
+    <a href="" class="btn btn-secondary btn-l">
+      <img src="img/icons/done.svg" class="btn-icon" alt="" />
+      Icon
+    </a>
+    <a href="" class="btn btn-secondary btn-l">
+      <img src="img/icons/loading.svg" class="btn-icon btn-icon-loading" alt="" />
+      Loading
+    </a>
+
+    <a href="" class="btn btn-link">Кнопка</a>
+
+    <a href="" class="btn btn-secondary btn-m btn-steam">
+      Войти через Steam
+      <svg class="btn-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M11.9793 0.000244141C5.66437 0.000244141 0.49125 4.85687 0 11.0284L6.44287 13.6854C7.00546 13.3005 7.6736 13.0947 8.35781 13.0955C8.42175 13.0955 8.48494 13.0973 8.54719 13.1007L11.4128 8.95774V8.89974C11.4128 6.40684 13.4462 4.37818 15.9458 4.37818C18.4454 4.37818 20.4788 6.40684 20.4788 8.89974C20.4788 11.3925 18.4454 13.422 15.9458 13.422C15.9112 13.422 15.8774 13.4212 15.8429 13.4204L11.7561 16.3278C11.7587 16.3818 11.7604 16.4356 11.7604 16.4886C11.7604 18.3608 10.2338 19.8834 8.35781 19.8834C6.711 19.8834 5.33316 18.7105 5.02181 17.158L0.413437 15.2575C1.84059 20.2903 6.47653 23.98 11.9793 23.98C18.6185 23.98 24 18.6113 24 11.9901C24 5.36818 18.6185 0.000244141 11.9793 0.000244141ZM7.533 18.1929L6.05653 17.5843C6.31781 18.1279 6.771 18.5827 7.37213 18.8324C8.67122 19.3726 10.1693 18.758 10.7108 17.4611C10.9729 16.8375 10.9745 16.1367 10.7151 15.5119C10.4556 14.8828 9.96516 14.392 9.33637 14.1304C8.71106 13.8714 8.04159 13.8808 7.45341 14.1023L8.97919 14.7315C9.9375 15.1299 10.3907 16.2275 9.99113 17.1833C9.59241 18.139 8.49131 18.5913 7.533 18.1929ZM18.9665 8.89974C18.9665 7.23876 17.6111 5.88635 15.9461 5.88635C14.2803 5.88635 12.9249 7.23876 12.9249 8.89974C12.9249 10.5608 14.2803 11.9124 15.9461 11.9124C17.6111 11.9124 18.9665 10.5608 18.9665 8.89974ZM13.6818 8.89464C13.6818 7.64481 14.698 6.63182 15.9505 6.63182C17.2038 6.63182 18.22 7.64481 18.22 8.89464C18.22 10.1445 17.2038 11.1575 15.9504 11.1575C14.698 11.1575 13.6817 10.1445 13.6817 8.89473L13.6818 8.89464Z"
+          fill="#4E70E9" />
+      </svg>
+    </a>
+
+    <!-- inputs -->
+    <form action="" class="form">
+      <input type="text" placeholder="Заполнение" class="form-input-text" />
+      <input type="text" placeholder="Заполнение" value="Всё верно" class="form-input-text form-input-text-success" />
+      <input type="text" placeholder="Заполнение" value="Что-то не так" class="form-input-text form-input-text-error" />
+      <input type="text" disabled readonly placeholder="Заполнение" value="Что-то не так" class="form-input-text" />
+    </form>
+    <div class="hash-text">
+      <svg
+        width="12"
+        height="12"
+        class="hash-text-icon"
+        viewBox="0 0 12 12"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M5.99991 6C6.27605 6 6.49991 5.77614 6.49991 5.5C6.49991 5.22386 6.27605 5 5.99991 5C5.72377 5 5.49991 5.22386 5.49991 5.5C5.49991 5.77614 5.72377 6 5.99991 6ZM5.99991 6V7.25M5.99992 1.5C7.16783 2.53329 8.69215 3.07128 10.2499 3C10.4767 3.77151 10.5461 4.58073 10.454 5.37959C10.3619 6.17845 10.1101 6.95063 9.71362 7.65026C9.31716 8.34989 8.78411 8.96269 8.14614 9.45224C7.50818 9.94179 6.77831 10.2981 5.99992 10.5C5.22152 10.2981 4.49166 9.94179 3.85369 9.45224C3.21572 8.96269 2.68267 8.34989 2.28621 7.65026C1.88976 6.95063 1.63798 6.17845 1.54585 5.37959C1.45373 4.58073 1.52312 3.77151 1.74992 3C3.30768 3.07128 4.832 2.53329 5.99992 1.5Z"
+          stroke="#4E70E9"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round" />
+      </svg>
+
+      <span class="hash-text-content">fa26w444fa8w88f44w8a</span>
+    </div>
+
+    <!-- coefficient -->
+    <div class="ratio-container">
+      <span class="ratio-item ratio-item-gold">2.2 x</span>
+      <span class="ratio-item ratio-item-green">2.2 x</span>
+      <span class="ratio-item ratio-item-red">2.2 x</span>
+      <span class="ratio-item ratio-item-purple">2.2 x</span>
+    </div>
+
+    <!-- notification icons -->
+    <div class="notification">
+      <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M6 15V16C6 16.7956 6.31607 17.5587 6.87868 18.1213C7.44129 18.6839 8.20435 19 9 19C9.79565 19 10.5587 18.6839 11.1213 18.1213C11.6839 17.5587 12 16.7956 12 16V15M7 3C7 2.46957 7.21071 1.96086 7.58579 1.58579C7.96086 1.21071 8.46957 1 9 1C9.53043 1 10.0391 1.21071 10.4142 1.58579C10.7893 1.96086 11 2.46957 11 3C12.1484 3.54303 13.1274 4.38833 13.8321 5.4453C14.5367 6.50227 14.9404 7.73107 15 9V12C15.0753 12.6217 15.2954 13.2171 15.6428 13.7381C15.9902 14.2592 16.4551 14.6914 17 15H1C1.54494 14.6914 2.00981 14.2592 2.35719 13.7381C2.70457 13.2171 2.92474 12.6217 3 12V9C3.05956 7.73107 3.4633 6.50227 4.16795 5.4453C4.8726 4.38833 5.85159 3.54303 7 3Z"
+          stroke="#576CB0"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round" />
+      </svg>
+    </div>
+    <div class="notification notification-unread">
+      <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M6 15V16C6 16.7956 6.31607 17.5587 6.87868 18.1213C7.44129 18.6839 8.20435 19 9 19C9.79565 19 10.5587 18.6839 11.1213 18.1213C11.6839 17.5587 12 16.7956 12 16V15M7 3C7 2.46957 7.21071 1.96086 7.58579 1.58579C7.96086 1.21071 8.46957 1 9 1C9.53043 1 10.0391 1.21071 10.4142 1.58579C10.7893 1.96086 11 2.46957 11 3C12.1484 3.54303 13.1274 4.38833 13.8321 5.4453C14.5367 6.50227 14.9404 7.73107 15 9V12C15.0753 12.6217 15.2954 13.2171 15.6428 13.7381C15.9902 14.2592 16.4551 14.6914 17 15H1C1.54494 14.6914 2.00981 14.2592 2.35719 13.7381C2.70457 13.2171 2.92474 12.6217 3 12V9C3.05956 7.73107 3.4633 6.50227 4.16795 5.4453C4.8726 4.38833 5.85159 3.54303 7 3Z"
+          stroke="#576CB0"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round" />
+      </svg>
+    </div>
+
+    <!-- avatars -->
+    <div class="avatar">
+        <img src="img/icons/avatar.svg" class="avatar-img" alt="">
+    </div>
+    <div class="avatar avatar-l">
+        <img src="img/icons/avatar.svg" class="avatar-img" alt="">
+    </div>
+    <div class="avatar avatar-m">
+        <img src="img/icons/avatar.svg" class="avatar-img" alt="">
+    </div>
+    <div class="avatar avatar-s">
+        <img src="img/icons/avatar.svg" class="avatar-img" alt="">
+    </div>
+
+    <!-- notifications text -->
+    <div class="note"><img src="img/icons/note.svg" class="note-icon" alt="">Просто информирующее сообщение, которое можно пропустить</div>
+    <div class="note note-problem"><img src="img/icons/note-problem.svg" class="note-icon" alt="">Сообщение, когда нужно предупредить пользователя о проблеме</div>
+    <div class="note note-success"><img src="img/icons/note-success.svg" class="note-icon" alt="">Сообщение, когда все прошло хорошо и не о чем переживать</div>
+    <div class="note note-error"><img src="img/icons/note-error.svg" class="note-icon" alt="">Сообщение, когда нужно все плохо и нужно что-то предпринимать</div>
+
+    <!-- money add and withdraw -->
+    <button class="btn btn-deposit"><img src="img/icons/wallet.svg" class="btn-only-icon" alt=""></button>
+    <button class="btn btn-withdraw"><img src="img/icons/cart.svg" class="btn-only-icon" alt=""></button>
+    <button class="btn btn-withdraw" disabled><img src="img/icons/cart.svg" class="btn-only-icon" alt=""></button>
+    <button class="btn btn-return"><img src="img/icons/arrow-return.svg" class="btn-only-icon" alt=""></button>
+  </body>
+</html>

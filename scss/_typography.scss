@@ -1,0 +1,212 @@
+.main-heading {
+  color: white;
+  font-size: 24px;
+}
+
+.sub-heading {
+  color: white;
+  font-size: 18px;
+}
+
+.text {
+  &-body,
+  &-small,
+  &-tiny,
+  &-smallest {
+    color: white;
+  }
+  &-body {
+    font-size: 16px;
+  }
+  &-small {
+    font-size: 14px;
+  }
+  &-tiny {
+    font-size: 12px;
+  }
+  &-smallest {
+    font-size: 10px;
+  }
+}
+
+.btn {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-block;
+  padding: 17px 32px;
+  text-decoration: none;
+  line-height: 1;
+  border-radius: 8px;
+  border: 1px solid $color-blue;
+  transition: 0.3s;
+  min-width: 120px;
+  text-align: center;
+
+  &-l {
+    padding: 17px 32px;
+  }
+
+  &-m {
+    padding: 13px 32px;
+  }
+
+  &-icon {
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    transition: 0.3s;
+
+    &-loading {
+      animation: loading-rotate 2s infinite linear;
+    }
+
+    path {
+      transition: 0.3s;
+    }
+  }
+
+  &-primary {
+    background-color: $color-blue;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+
+    &.btn-disabled {
+      opacity: 0.2;
+    }
+  }
+
+  &-secondary {
+    background-color: rgba($color-blue, 0.1);
+
+    &:hover {
+      background-color: rgba($color-blue, 0.2);
+    }
+
+    &:active {
+      background-color: rgba($color-blue, 0);
+    }
+
+    &.btn-disabled {
+      background-color: rgba($color-blue, 0.1);
+      border-color: rgba($color-blue, 0);
+      color: $color-blue;
+    }
+  }
+
+  &-steam {
+    .btn-icon {
+      margin: 0 0 0 10px;
+      width: 24px;
+      height: 24px;
+    }
+    &:hover {
+      background-color: $color-blue;
+      .btn-icon {
+        path {
+          fill: white;
+        }
+      }
+    }
+    &:active {
+      background-color: rgba($color-blue, 0.5);
+      border-color: rgba($color-blue, 0.5);
+      .btn-icon {
+        path {
+          fill: $color-blue;
+        }
+      }
+    }
+  }
+
+  &-deposit,
+  &-withdraw,
+  &-return {
+    background-color: $color-green;
+    border-color: $color-green;
+    padding: 12px;
+    min-width: unset;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+
+    &[disabled] {
+      opacity: 0.2;
+
+      &:hover, &:active {
+        opacity: 0.2;
+      }
+    }
+  }
+
+  &-withdraw {
+    background-color: rgba($color-green, 0.5);
+    border-color: rgba($color-green, 0);
+
+    &:hover {
+      background-color: $color-green;
+      border-color: $color-green;
+      opacity: 1;
+    }
+  }
+
+  &-return {
+    background-color: rgba($color-red, 0.5);
+    border-color: rgba($color-red, 0);
+
+    &:hover {
+      background-color: $color-red;
+      border-color: $color-red;
+      opacity: 1;
+    }
+  }
+
+  &-only {
+    &-icon {
+      height: 16px;
+    }
+  }
+
+  &-link {
+    color: $color-blue;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0;
+    border: 0;
+    text-decoration: underline;
+    &:hover {
+      color: white;
+    }
+    &:active {
+      color: white;
+      opacity: 0.5;
+    }
+    &.btn-disabled {
+      color: $color-border;
+      text-decoration: none;
+    }
+  }
+}
+
+@keyframes loading-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
