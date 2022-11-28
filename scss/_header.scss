@@ -1,0 +1,48 @@
+.nav {
+  background: linear-gradient(270deg, rgba(69, 84, 137, 0.15) -50%, rgba(69, 84, 137, 0) 100%);
+
+  &-logo {
+  }
+}
+
+.header {
+}
+
+.nav {
+  width: 107px;
+  
+  &-logo {
+    max-width: 100%;
+    margin-bottom: -48px;
+  }
+
+  &-links {
+    padding: 0;
+    margin: 0;
+
+    &-item {
+      > a {
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 48px;
+      }
+    }
+    &-name {
+      color: $color-text-body;
+      font-size: 11px;
+      font-weight: 700;
+      margin: 14px 0 8px;
+    }
+    &-sum {
+      background-color: rgba($color-border, 0.2);
+      color: $color-text-body;
+      font-size: 12px;
+      border-radius: 4px;
+      padding: 4px 8px;
+      line-height: 1;
+      font-weight: 700;
+    }
+  }
+}
