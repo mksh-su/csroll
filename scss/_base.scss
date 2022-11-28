@@ -19,6 +19,29 @@
   font-family: "Montserrat", sans-serif;
 }
 
+// scrollbars start
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba($color-border, .5) rgba($color-border, .1);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba($color-border, .1);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba($color-border, .5);
+  border-radius: 20px;
+  border: 3px solid rgba($color-border, .1);
+}
+// scrollbars end
+
 body {
   margin: 0;
   background-color: $bg-main;
