@@ -48,7 +48,7 @@
   font-size: 12px;
   line-height: 120%;
   font-weight: 600;
-  color: $color-icon;
+  color: $color-border;
   border: 0;
   border-radius: 4px;
   display: flex;
@@ -242,4 +242,29 @@
     &-error {
         background-color: rgba($color-red, 10%);
     }
+}
+
+.gradient-top-dark {
+  background: linear-gradient(180deg, rgba(69, 84, 137, 0) 0%, rgba($color-border, .1) 100%);
+}
+
+.authorise {
+  &-wait, &-request {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .text {
+      color: white;
+      font-weight: 600;
+      max-width: 250px;
+      text-align: center;
+    }
+  }
+  &-wait {
+    padding: 8vh 0;
+  }
+  &-request {
+
+  }
 }

@@ -1,43 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/simplebar.css">
+    <link rel="stylesheet" href="css/simplebar.css" />
     <link rel="stylesheet" href="css/style.min.css" />
     <title>Crash</title>
   </head>
-  <body class="d-flex">
-    <nav class="nav">
-      <img src="img/logo.svg" class="nav-logo" alt="" />
-      <ul class="nav-links">
-        <li class="nav-links-item">
-          <a href="">
-            <img src="img/icons/crash.svg" alt="" />
-            <span class="nav-links-name">Краш</span>
-            <span class="nav-links-sum">$9 772</span>
-          </a>
-        </li>
-        <li class="nav-links-item">
-          <a href="">
-            <img src="img/icons/jackpot.svg" alt="" />
-            <span class="nav-links-name">Джекпот</span>
-            <span class="nav-links-sum">$1 754</span>
-          </a>
-        </li>
-        <li class="nav-links-item">
-          <a href="">
-            <img src="img/icons/roulette.svg" alt="" />
-            <span class="nav-links-name">Рулетка</span>
-            <span class="nav-links-sum">$874</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <header class="header">
-
-    </header>
+  <body>
+    <div class="wrapper d-flex">
+      <nav class="nav">
+        <img src="img/logo.svg" class="nav-logo" alt="" />
+        <ul class="nav-links">
+          <li class="nav-links-item active">
+            <a href="">
+              <img src="img/icons/crash.svg" alt="" />
+              <span class="nav-links-name">Краш</span>
+              <span class="nav-links-sum">$9 772</span>
+            </a>
+          </li>
+          <li class="nav-links-item">
+            <a href="">
+              <img src="img/icons/jackpot.svg" alt="" />
+              <span class="nav-links-name">Джекпот</span>
+              <span class="nav-links-sum">$1 754</span>
+            </a>
+          </li>
+          <li class="nav-links-item">
+            <a href="">
+              <img src="img/icons/roulette.svg" alt="" />
+              <span class="nav-links-name">Рулетка</span>
+              <span class="nav-links-sum">$874</span>
+            </a>
+          </li>
+        </ul>
+        <div class="nav-social">
+          <a href=""><img src="img/logos/social/discord.svg" class="nav-social-logo" alt="" /></a>
+          <a href=""><img src="img/logos/social/telegram.svg" class="nav-social-logo" alt="" /></a>
+          <a href=""><img src="img/logos/social/vk.svg" class="nav-social-logo" alt="" /></a>
+          <a href=""><img src="img/logos/social/youtube.svg" class="nav-social-logo" alt="" /></a>
+        </div>
+        <div class="nav-country">
+          <img src="img/flags/china.svg" alt="" />
+        </div>
+        <div class="nav-sound">
+          <img src="img/icons/volume-on.svg" alt="" />
+        </div>
+        <div class="nav-settings">
+          <a href=""><img src="img/icons/settings.svg" alt="" /></a>
+        </div>
+      </nav>
+      <div class="container container-general d-flex">
+        <div class="left-col">
+          <div class="authorise-wait">
+            <div class="authorise-wait-img">
+              <img src="img/guns/rifle-empty.svg" alt="" />
+            </div>
+            <p class="text">Ожидание авторизации...</p>
+          </div>
+          <div class="authorise-request gradient-top-dark">
+            <div class="authorise-request-img">
+              <img src="img/other/lock.svg" alt="" />
+            </div>
+            <p class="text">Для доступа к инвентарю необходимо авторизоваться</p>
+            <a href="" class="btn btn-secondary btn-m btn-steam">
+              Войти через Steam
+              <svg
+                class="btn-icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11.9793 0.000244141C5.66437 0.000244141 0.49125 4.85687 0 11.0284L6.44287 13.6854C7.00546 13.3005 7.6736 13.0947 8.35781 13.0955C8.42175 13.0955 8.48494 13.0973 8.54719 13.1007L11.4128 8.95774V8.89974C11.4128 6.40684 13.4462 4.37818 15.9458 4.37818C18.4454 4.37818 20.4788 6.40684 20.4788 8.89974C20.4788 11.3925 18.4454 13.422 15.9458 13.422C15.9112 13.422 15.8774 13.4212 15.8429 13.4204L11.7561 16.3278C11.7587 16.3818 11.7604 16.4356 11.7604 16.4886C11.7604 18.3608 10.2338 19.8834 8.35781 19.8834C6.711 19.8834 5.33316 18.7105 5.02181 17.158L0.413437 15.2575C1.84059 20.2903 6.47653 23.98 11.9793 23.98C18.6185 23.98 24 18.6113 24 11.9901C24 5.36818 18.6185 0.000244141 11.9793 0.000244141ZM7.533 18.1929L6.05653 17.5843C6.31781 18.1279 6.771 18.5827 7.37213 18.8324C8.67122 19.3726 10.1693 18.758 10.7108 17.4611C10.9729 16.8375 10.9745 16.1367 10.7151 15.5119C10.4556 14.8828 9.96516 14.392 9.33637 14.1304C8.71106 13.8714 8.04159 13.8808 7.45341 14.1023L8.97919 14.7315C9.9375 15.1299 10.3907 16.2275 9.99113 17.1833C9.59241 18.139 8.49131 18.5913 7.533 18.1929ZM18.9665 8.89974C18.9665 7.23876 17.6111 5.88635 15.9461 5.88635C14.2803 5.88635 12.9249 7.23876 12.9249 8.89974C12.9249 10.5608 14.2803 11.9124 15.9461 11.9124C17.6111 11.9124 18.9665 10.5608 18.9665 8.89974ZM13.6818 8.89464C13.6818 7.64481 14.698 6.63182 15.9505 6.63182C17.2038 6.63182 18.22 7.64481 18.22 8.89464C18.22 10.1445 17.2038 11.1575 15.9504 11.1575C14.698 11.1575 13.6817 10.1445 13.6817 8.89473L13.6818 8.89464Z"
+                  fill="#4E70E9" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="center-col">
+          <header class="header">
+            <ul class="header-links">
+              <li class="header-links-item"><a href="" class="header-links-item-text">Бонусы</a></li>
+              <li class="header-links-item"><a href="" class="header-links-item-text">Топ</a></li>
+              <li class="header-links-item"><a href="" class="header-links-item-text">Партнерство</a></li>
+              <li class="header-links-item"><a href="" class="header-links-item-text">Получи 1000$</a></li>
+            </ul>
+          </header>
+        </div>
+        <div class="right-col"></div>
+      </div>
+    </div>
     <script src="js/simplebar.min.js"></script>
     <script src="js/scripts.js"></script>
   </body>

@@ -6,35 +6,87 @@
 }
 
 .header {
+  margin-top: 4vh;
+  &-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 35px;
+    &-item {
+      &-text {
+        font-size: 14px;
+        font-weight: 600;
+        color: $color-text-body;
+        text-decoration: none;
+      }
+    }
+  }
 }
 
 .nav {
   width: 107px;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &-logo {
-    max-width: 100%;
-    margin-bottom: -48px;
+    max-width: 14vh;
+    margin-bottom: -7vh;
   }
 
   &-links {
     padding: 0;
     margin: 0;
+    margin-bottom: 2vh;
+    width: 100%;
+    list-style: none;
 
     &-item {
+      position: relative;
+
+      &.active {
+        &:before {
+          content: "";
+          background: linear-gradient(45deg, #a03434 0%, #ff985e 100%);
+          box-shadow: 0px -27px 77px rgba(224, 70, 49, 0.54), 0px -13.5132px 38.5376px rgba(224, 70, 49, 0.419555),
+            0px -8.13971px 23.2132px rgba(224, 70, 49, 0.372926), 0px -5.21635px 14.8763px rgba(224, 70, 49, 0.340442),
+            0px -3.38082px 9.64159px rgba(224, 70, 49, 0.310961), 0px -2.12819px 6.06927px rgba(224, 70, 49, 0.27789),
+            0px -1.22278px 3.48718px rgba(224, 70, 49, 0.23386), inset -1px 0px 1px #ffffff;
+          border-radius: 3px;
+          transform: rotate(180deg);
+          width: 4px;
+          height: 100%;
+          display: inline-block;
+          position: absolute;
+          left: -2px;
+          top: 0;
+        }
+
+        .nav-links-name,
+        .nav-links-sum {
+          color: white;
+        }
+      }
+
       > a {
         text-decoration: none;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 48px;
+        margin-top: 4vh;
+      }
+
+      img {
+        max-width: 4.5vh;
       }
     }
     &-name {
       color: $color-text-body;
       font-size: 11px;
       font-weight: 700;
-      margin: 14px 0 8px;
+      margin: 12px 0 7px;
     }
     &-sum {
       background-color: rgba($color-border, 0.2);
@@ -44,6 +96,33 @@
       padding: 4px 8px;
       line-height: 1;
       font-weight: 700;
+    }
+  }
+  &-social {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    margin: auto 0;
+    &-logo {
+      max-width: 3vh;
+    }
+  }
+  &-country {
+    background-color: rgba($color-border, 0.1);
+    img {
+      max-width: 3vh;
+    }
+  }
+  &-sound {
+    margin: 2vh 0;
+    img {
+      max-width: 3vh;
+    }
+  }
+  &-settings {
+    margin-bottom: 2vh;
+    img {
+      max-width: 3vh;
     }
   }
 }
