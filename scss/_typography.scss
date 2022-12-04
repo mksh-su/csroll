@@ -1,11 +1,11 @@
 .main-heading {
   color: white;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .sub-heading {
   color: white;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .text {
@@ -16,46 +16,49 @@
     color: white;
   }
   &-body {
-    font-size: 16px;
+    font-size: 1rem;
   }
   &-small {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
   &-tiny {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
   &-smallest {
-    font-size: 10px;
+    font-size: 0.625rem;
+  }
+  &-faded {
+    color: $color-text-body;
   }
 }
 
 .btn {
   color: white;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 600;
   cursor: pointer;
   display: inline-block;
-  padding: 17px 32px;
+  padding: 1.0625rem 2rem;
   text-decoration: none;
   line-height: 1;
-  border-radius: 8px;
-  border: 2px solid $color-blue;
+  border-radius: 0.5rem;
+  border: 0.125rem solid $color-blue;
   transition: .3s;
-  min-width: 120px;
+  min-width: 7.5rem;
   text-align: center;
 
   &-l {
-    padding: 17px 32px;
+    padding: 1.0625rem 2rem;
   }
 
   &-m {
-    padding: 13px 32px;
+    padding: 0.8125rem 2rem;
   }
 
   &-icon {
-    width: 12px;
-    height: 12px;
-    margin-right: 10px;
+    width: 0.75rem;
+    height: 0.75rem;
+    margin-right: 0.625rem;
     display: inline-block;
     vertical-align: middle;
     transition: 0.3s;
@@ -104,10 +107,11 @@
   }
 
   &-steam {
+    white-space: nowrap;
     .btn-icon {
-      margin: 0 0 0 10px;
-      width: 24px;
-      height: 24px;
+      margin: 0 0 0 0.625rem;
+      width: 1.5rem;
+      height: 1.5rem;
     }
     &:hover {
       background-color: $color-blue;
@@ -133,7 +137,7 @@
   &-return {
     background-color: $color-green;
     border-color: $color-green;
-    padding: 12px;
+    padding: 0.75rem;
     min-width: unset;
 
     &:hover {
@@ -177,13 +181,13 @@
 
   &-only {
     &-icon {
-      height: 16px;
+      height: 1rem;
     }
   }
 
   &-link {
     color: $color-blue;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     padding: 0;
     border: 0;
@@ -199,6 +203,20 @@
       color: $color-border;
       text-decoration: none;
     }
+  }
+
+  &-chat {
+    background-color: $color-blue;
+    background-image: url(../img/icons/chat.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1rem;
+    min-width: unset;
+    min-width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 50%;
+    padding: 0;
+    margin-left: 1rem;
   }
 }
 

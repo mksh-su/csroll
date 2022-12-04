@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Crash</title>
+  </head>
+  <body class="scroll">
+    <div class="wrapper d-flex">
+      <nav class="nav">
+        <img src="img/logo.svg" class="nav-logo" alt="" />
+        <ul class="nav-links">
+          <li class="nav-links-item active">
+            <a href="">
+              <img src="img/icons/crash.svg" alt="" />
+              <span class="nav-links-name">Краш</span>
+              <span class="nav-links-sum">$9 772</span>
+            </a>
+          </li>
+          <li class="nav-links-item">
+            <a href="">
+              <img src="img/icons/jackpot.svg" alt="" />
+              <span class="nav-links-name">Джекпот</span>
+              <span class="nav-links-sum">$1 754</span>
+            </a>
+          </li>
+          <li class="nav-links-item">
+            <a href="">
+              <img src="img/icons/roulette.svg" alt="" />
+              <span class="nav-links-name">Рулетка</span>
+              <span class="nav-links-sum">$874</span>
+            </a>
+          </li>
+        </ul>
+        <div class="nav-social">
+          <a href=""><img src="img/logos/social/discord.svg" class="nav-social-logo" alt="" /></a>
+          <a href=""><img src="img/logos/social/telegram.svg" class="nav-social-logo" alt="" /></a>
+          <a href=""><img src="img/logos/social/vk.svg" class="nav-social-logo" alt="" /></a>
+          <a href=""><img src="img/logos/social/youtube.svg" class="nav-social-logo" alt="" /></a>
+        </div>
+        <div class="nav-country">
+          <img src="img/flags/china.svg" alt="" />
+        </div>
+        <div class="nav-sound">
+          <img src="img/icons/volume-on.svg" alt="" />
+        </div>
+        <div class="nav-settings">
+          <a href=""><img src="img/icons/settings.svg" alt="" /></a>
+        </div>
+      </nav>
+      <div class="container container-general d-flex">
+        <div class="left-col">
+          <div class="timer">
+            <img src="img/other/timer.svg" class="timer-img" alt="" />
+            <div class="timer-text">
+              <span id="m" class="timer-text-ticker">00</span>
+              <span class="timer-text-ticker">:</span>
+              <span id="s" class="timer-text-ticker">00</span>
+              <span class="timer-text-sec">sec</span>
+            </div>
+          </div>
+          <div class="auth-request gradient-top-dark">
+            <div class="auth-request-img">
+              <img src="img/other/lock.svg" alt="" />
+            </div>
+            <p class="text">Для доступа к инвентарю необходимо авторизоваться</p>
+            <a href="" class="btn btn-secondary btn-m btn-steam">
+              Войти через Steam
+              <svg
+                class="btn-icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11.9793 0.000244141C5.66437 0.000244141 0.49125 4.85687 0 11.0284L6.44287 13.6854C7.00546 13.3005 7.6736 13.0947 8.35781 13.0955C8.42175 13.0955 8.48494 13.0973 8.54719 13.1007L11.4128 8.95774V8.89974C11.4128 6.40684 13.4462 4.37818 15.9458 4.37818C18.4454 4.37818 20.4788 6.40684 20.4788 8.89974C20.4788 11.3925 18.4454 13.422 15.9458 13.422C15.9112 13.422 15.8774 13.4212 15.8429 13.4204L11.7561 16.3278C11.7587 16.3818 11.7604 16.4356 11.7604 16.4886C11.7604 18.3608 10.2338 19.8834 8.35781 19.8834C6.711 19.8834 5.33316 18.7105 5.02181 17.158L0.413437 15.2575C1.84059 20.2903 6.47653 23.98 11.9793 23.98C18.6185 23.98 24 18.6113 24 11.9901C24 5.36818 18.6185 0.000244141 11.9793 0.000244141ZM7.533 18.1929L6.05653 17.5843C6.31781 18.1279 6.771 18.5827 7.37213 18.8324C8.67122 19.3726 10.1693 18.758 10.7108 17.4611C10.9729 16.8375 10.9745 16.1367 10.7151 15.5119C10.4556 14.8828 9.96516 14.392 9.33637 14.1304C8.71106 13.8714 8.04159 13.8808 7.45341 14.1023L8.97919 14.7315C9.9375 15.1299 10.3907 16.2275 9.99113 17.1833C9.59241 18.139 8.49131 18.5913 7.533 18.1929ZM18.9665 8.89974C18.9665 7.23876 17.6111 5.88635 15.9461 5.88635C14.2803 5.88635 12.9249 7.23876 12.9249 8.89974C12.9249 10.5608 14.2803 11.9124 15.9461 11.9124C17.6111 11.9124 18.9665 10.5608 18.9665 8.89974ZM13.6818 8.89464C13.6818 7.64481 14.698 6.63182 15.9505 6.63182C17.2038 6.63182 18.22 7.64481 18.22 8.89464C18.22 10.1445 17.2038 11.1575 15.9504 11.1575C14.698 11.1575 13.6817 10.1445 13.6817 8.89473L13.6818 8.89464Z"
+                  fill="#4E70E9" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="right-col">
+          <header class="header">
+            <ul class="header-links">
+              <li class="header-links-item">
+                <a href="" class="header-links-item-text">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10 6V19M10 6C9.63828 4.5094 9.01545 3.23507 8.21274 2.34317C7.41003 1.45127 6.46469 0.983203 5.5 1.00001C4.83696 1.00001 4.20107 1.2634 3.73223 1.73224C3.26339 2.20108 3 2.83697 3 3.50001C3 4.16305 3.26339 4.79894 3.73223 5.26778C4.20107 5.73662 4.83696 6.00001 5.5 6.00001M10 6C10.3617 4.5094 10.9846 3.23507 11.7873 2.34317C12.59 1.45127 13.5353 0.983203 14.5 1.00001C15.163 1.00001 15.7989 1.2634 16.2678 1.73224C16.7366 2.20108 17 2.83697 17 3.50001C17 4.16305 16.7366 4.79894 16.2678 5.26778C15.7989 5.73662 15.163 6.00001 14.5 6.00001M17 10V17C17 17.5304 16.7893 18.0391 16.4142 18.4142C16.0391 18.7893 15.5304 19 15 19H5C4.46957 19 3.96086 18.7893 3.58579 18.4142C3.21071 18.0391 3 17.5304 3 17V10M2 6H18C18.5523 6 19 6.44772 19 7V9C19 9.55228 18.5523 10 18 10H2C1.44772 10 1 9.55228 1 9V7C1 6.44772 1.44772 6 2 6Z"
+                      stroke="#576CB0"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  Бонусы
+                </a>
+              </li>
+              <li class="header-links-item">
+                <a href="" class="header-links-item-text">
+                  <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M6 18H14M10 14V18M10 14C11.3261 14 12.5979 13.4732 13.5355 12.5355C14.4732 11.5979 15 10.3261 15 9V1H5V9C5 10.3261 5.52678 11.5979 6.46447 12.5355C7.40215 13.4732 8.67392 14 10 14ZM5 6C5 7.10457 4.10457 8 3 8C1.89543 8 1 7.10457 1 6C1 4.89543 1.89543 4 3 4C4.10457 4 5 4.89543 5 6ZM19 6C19 7.10457 18.1046 8 17 8C15.8954 8 15 7.10457 15 6C15 4.89543 15.8954 4 17 4C18.1046 4 19 4.89543 19 6Z"
+                      stroke="#576CB0"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  Топ
+                </a>
+              </li>
+              <li class="header-links-item">
+                <a href="" class="header-links-item-text">
+                  <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M6 5V3C6 2.46957 6.21071 1.96086 6.58579 1.58579C6.96086 1.21071 7.46957 1 8 1H12C12.5304 1 13.0391 1.21071 13.4142 1.58579C13.7893 1.96086 14 2.46957 14 3V5M10 10V10.01M1 11C3.79158 12.4067 6.87403 13.1394 10 13.1394C13.126 13.1394 16.2084 12.4067 19 11M3 5H17C18.1046 5 19 5.89543 19 7V16C19 17.1046 18.1046 18 17 18H3C1.89543 18 1 17.1046 1 16V7C1 5.89543 1.89543 5 3 5Z"
+                      stroke="#576CB0"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  Партнерство
+                </a>
+              </li>
+              <li class="header-links-item header-links-item-bonus">
+                <a href="" class="header-links-item-text">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10 6V19M10 6C9.63828 4.5094 9.01545 3.23507 8.21274 2.34317C7.41003 1.45127 6.46469 0.983203 5.5 1.00001C4.83696 1.00001 4.20107 1.2634 3.73223 1.73224C3.26339 2.20108 3 2.83697 3 3.50001C3 4.16305 3.26339 4.79894 3.73223 5.26778C4.20107 5.73662 4.83696 6.00001 5.5 6.00001M10 6C10.3617 4.5094 10.9846 3.23507 11.7873 2.34317C12.59 1.45127 13.5353 0.983203 14.5 1.00001C15.163 1.00001 15.7989 1.2634 16.2678 1.73224C16.7366 2.20108 17 2.83697 17 3.50001C17 4.16305 16.7366 4.79894 16.2678 5.26778C15.7989 5.73662 15.163 6.00001 14.5 6.00001M17 10V17C17 17.5304 16.7893 18.0391 16.4142 18.4142C16.0391 18.7893 15.5304 19 15 19H5C4.46957 19 3.96086 18.7893 3.58579 18.4142C3.21071 18.0391 3 17.5304 3 17V10M2 6H18C18.5523 6 19 6.44772 19 7V9C19 9.55228 18.5523 10 18 10H2C1.44772 10 1 9.55228 1 9V7C1 6.44772 1.44772 6 2 6Z"
+                      stroke="#EAC159"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  Получи 1000$
+                </a>
+              </li>
+            </ul>
+            <div class="notification">
+              <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6 15V16C6 16.7956 6.31607 17.5587 6.87868 18.1213C7.44129 18.6839 8.20435 19 9 19C9.79565 19 10.5587 18.6839 11.1213 18.1213C11.6839 17.5587 12 16.7956 12 16V15M7 3C7 2.46957 7.21071 1.96086 7.58579 1.58579C7.96086 1.21071 8.46957 1 9 1C9.53043 1 10.0391 1.21071 10.4142 1.58579C10.7893 1.96086 11 2.46957 11 3C12.1484 3.54303 13.1274 4.38833 13.8321 5.4453C14.5367 6.50227 14.9404 7.73107 15 9V12C15.0753 12.6217 15.2954 13.2171 15.6428 13.7381C15.9902 14.2592 16.4551 14.6914 17 15H1C1.54494 14.6914 2.00981 14.2592 2.35719 13.7381C2.70457 13.2171 2.92474 12.6217 3 12V9C3.05956 7.73107 3.4633 6.50227 4.16795 5.4453C4.8726 4.38833 5.85159 3.54303 7 3Z"
+                  stroke="#576CB0"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <a href="" class="btn btn-secondary btn-m btn-steam">
+              Войти через Steam
+              <svg
+                class="btn-icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11.9793 0.000244141C5.66437 0.000244141 0.49125 4.85687 0 11.0284L6.44287 13.6854C7.00546 13.3005 7.6736 13.0947 8.35781 13.0955C8.42175 13.0955 8.48494 13.0973 8.54719 13.1007L11.4128 8.95774V8.89974C11.4128 6.40684 13.4462 4.37818 15.9458 4.37818C18.4454 4.37818 20.4788 6.40684 20.4788 8.89974C20.4788 11.3925 18.4454 13.422 15.9458 13.422C15.9112 13.422 15.8774 13.4212 15.8429 13.4204L11.7561 16.3278C11.7587 16.3818 11.7604 16.4356 11.7604 16.4886C11.7604 18.3608 10.2338 19.8834 8.35781 19.8834C6.711 19.8834 5.33316 18.7105 5.02181 17.158L0.413437 15.2575C1.84059 20.2903 6.47653 23.98 11.9793 23.98C18.6185 23.98 24 18.6113 24 11.9901C24 5.36818 18.6185 0.000244141 11.9793 0.000244141ZM7.533 18.1929L6.05653 17.5843C6.31781 18.1279 6.771 18.5827 7.37213 18.8324C8.67122 19.3726 10.1693 18.758 10.7108 17.4611C10.9729 16.8375 10.9745 16.1367 10.7151 15.5119C10.4556 14.8828 9.96516 14.392 9.33637 14.1304C8.71106 13.8714 8.04159 13.8808 7.45341 14.1023L8.97919 14.7315C9.9375 15.1299 10.3907 16.2275 9.99113 17.1833C9.59241 18.139 8.49131 18.5913 7.533 18.1929ZM18.9665 8.89974C18.9665 7.23876 17.6111 5.88635 15.9461 5.88635C14.2803 5.88635 12.9249 7.23876 12.9249 8.89974C12.9249 10.5608 14.2803 11.9124 15.9461 11.9124C17.6111 11.9124 18.9665 10.5608 18.9665 8.89974ZM13.6818 8.89464C13.6818 7.64481 14.698 6.63182 15.9505 6.63182C17.2038 6.63182 18.22 7.64481 18.22 8.89464C18.22 10.1445 17.2038 11.1575 15.9504 11.1575C14.698 11.1575 13.6817 10.1445 13.6817 8.89473L13.6818 8.89464Z"
+                  fill="#4E70E9" />
+              </svg>
+            </a>
+            <a href="" class="header-profile">
+              <img src="img/flags/russia.svg" class="header-profile-flag" alt="" />
+              <img src="img/icons/user.svg" class="header-profile-icon" alt="" />
+              <span class="header-profile-score">3&nbsp;585</span>
+            </a>
+            <ul class="header-links header-links-second">
+              <li class="header-links-item"><a href="" class="header-links-item-text">Правила</a></li>
+              <li class="header-links-item">
+                <a href="" class="header-links-item-text header-links-item-arrow">
+                  <img src="img/icons/arrow-right.svg" alt="" />
+                </a>
+              </li>
+            </ul>
+          </header>
+          <div class="row">
+            <div class="main-col">
+              <div class="auth-items d-flex">
+                <div class="auth-wait">
+                  <div class="d-flex">
+                    <div class="auth-wait-img">
+                      <img src="img/guns/rifle-empty.svg" class="auth-wait-rifle" alt="" />
+                      <img src="img/other/circle.svg" class="auth-wait-circle" alt="" />
+                    </div>
+                    <div class="auth-wait-img">
+                      <img src="img/guns/rifle-empty.svg" class="auth-wait-rifle" alt="" />
+                      <img src="img/other/circle.svg" class="auth-wait-circle" alt="" />
+                    </div>
+                  </div>
+                  <p class="text text-small text-faded">Ожидание предметов...</p>
+                </div>
+                <div class="auth-items-settings">
+                  <div class="auth-items-inventory d-flex">
+                    <div class="auth-items-inventory-choice d-flex">
+                      <img src="img/icons/rifle.svg" class="auth-items-inventory-img" alt="" />
+                      <div class="auth-items-inventory-choice-text">
+                        <p class="auth-items-inventory-choice-sum">0$</p>
+                        <p class="auth-items-inventory-choice-sign">Инвентарь</p>
+                      </div>
+                      <img src="img/icons/dots-vertical.svg" class="auth-items-inventory-dots" alt="" />
+                    </div>
+                    <div class="auth-items-inventory-choose">
+                      <p class="auth-items-inventory-choose-text">Выберите предметы</p>
+                      <img src="img/icons/remove.svg" class="auth-items-inventory-choose-icon" alt="">
+                    </div>
+                  </div>
+                  <a href="" class="btn btn-primary btn-l">Авторизуйтесь</a>
+                </div>
+              </div>
+              <div class="ratio-container">
+                <span class="ratio-item ratio-item-gold">2.2 x</span>
+                <span class="ratio-item ratio-item-green">2.2 x</span>
+                <span class="ratio-item ratio-item-red">2.2 x</span>
+                <span class="ratio-item ratio-item-purple">2.2 x</span>
+                <span class="ratio-item ratio-item-gold">2.2 x</span>
+                <span class="ratio-item ratio-item-green">2.2 x</span>
+                <span class="ratio-item ratio-item-red">2.2 x</span>
+                <span class="ratio-item ratio-item-purple">2.2 x</span>
+                <span class="ratio-item ratio-item-gold">2.2 x</span>
+                <span class="ratio-item ratio-item-green">2.2 x</span>
+                <span class="ratio-item ratio-item-red">2.2 x</span>
+                <span class="ratio-item ratio-item-purple">2.2 x</span>
+              </div>
+              <div class="stats-row stats-row-top">
+                <img src="img/icons/loader.svg" class="stats-row-top-icon" alt="" />
+                <p class="stats-row-top-heading">Статистика раунда</p>
+                <div class="hash-text">
+                  <svg
+                    width="12"
+                    height="12"
+                    class="hash-text-icon"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5.99991 6C6.27605 6 6.49991 5.77614 6.49991 5.5C6.49991 5.22386 6.27605 5 5.99991 5C5.72377 5 5.49991 5.22386 5.49991 5.5C5.49991 5.77614 5.72377 6 5.99991 6ZM5.99991 6V7.25M5.99992 1.5C7.16783 2.53329 8.69215 3.07128 10.2499 3C10.4767 3.77151 10.5461 4.58073 10.454 5.37959C10.3619 6.17845 10.1101 6.95063 9.71362 7.65026C9.31716 8.34989 8.78411 8.96269 8.14614 9.45224C7.50818 9.94179 6.77831 10.2981 5.99992 10.5C5.22152 10.2981 4.49166 9.94179 3.85369 9.45224C3.21572 8.96269 2.68267 8.34989 2.28621 7.65026C1.88976 6.95063 1.63798 6.17845 1.54585 5.37959C1.45373 4.58073 1.52312 3.77151 1.74992 3C3.30768 3.07128 4.832 2.53329 5.99992 1.5Z"
+                      stroke="#4E70E9"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"></path>
+                  </svg>
+                  <span class="hash-text-content">fa26w444fa8w88f44w8a</span>
+                </div>
+                <div class="stats-row-top-item">
+                  <img src="img/icons/players.svg" alt="" />
+                  <p class="stats-row-top-item-text">
+                    <b>1 117</b>
+                    Игроков
+                  </p>
+                </div>
+                <div class="stats-row-top-item">
+                  <img src="img/icons/money.svg" alt="" />
+                  <p class="stats-row-top-item-text">
+                    <b>$ 9 771,87</b>
+                    Общий банк
+                  </p>
+                </div>
+                <div class="stats-row-top-item">
+                  <img src="img/icons/skins.svg" alt="" />
+                  <p class="stats-row-top-item-text">
+                    <b>187</b>
+                    Скинов
+                  </p>
+                </div>
+              </div>
+              <div class="stats-container">
+                <div class="stats-row stats-row-win">
+                  <div class="stats-row-left">
+                    <div class="stats-avatar">
+                      <img src="img/people/person-1.png" alt="" />
+                    </div>
+                    <p class="stats-amount">$ 278,15</p>
+                    <div class="stats-guns-row">
+                      <img src="img/guns/pistol-1.png" class="stats-guns-item" alt="" />
+                      <img src="img/guns/pistol-2.png" class="stats-guns-item" alt="" />
+                      <img src="img/guns/pistol-3.png" class="stats-guns-item" alt="" />
+                    </div>
+                  </div>
+                  <div class="stats-row-right">
+                    <div class="stats-result stats-result-win">10.20 x</div>
+                    <p class="stats-money stats-money-win">$ 3 999,87</p>
+                    <div class="stats-guns-row">
+                      <img src="img/guns/knife-2.png" class="stats-guns-item" alt="" />
+                    </div>
+                    <img src="img/other/up.svg" class="stats-result-img" alt="" />
+                  </div>
+                </div>
+                <div class="stats-row stats-row-lose">
+                  <div class="stats-row-left">
+                    <div class="stats-avatar">
+                      <img src="img/people/person-2.png" alt="" />
+                    </div>
+                    <p class="stats-amount">$ 278,15</p>
+                    <div class="stats-guns-row">
+                      <img src="img/guns/pistol-1.png" class="stats-guns-item" alt="" />
+                    </div>
+                  </div>
+                  <div class="stats-row-right">
+                    <div class="stats-result stats-result-lose">10.20 x</div>
+                    <img src="img/other/down.svg" class="stats-result-img" alt="" />
+                  </div>
+                </div>
+                <div class="stats-row">
+                  <div class="stats-row-left">
+                    <div class="stats-avatar">
+                      <img src="img/people/person-3.png" alt="" />
+                    </div>
+                    <p class="stats-amount">$ 278,15</p>
+                    <div class="stats-guns-row">
+                      <img src="img/guns/pistol-2.png" class="stats-guns-item" alt="" />
+                    </div>
+                  </div>
+                  <div class="stats-row-right">
+                    <div class="stats-result">В игре</div>
+                  </div>
+                </div>
+                <div class="stats-row">
+                  <div class="stats-row-left">
+                    <div class="stats-avatar">
+                      <img src="img/people/person-4.png" alt="" />
+                    </div>
+                    <p class="stats-amount">$ 278,15</p>
+                    <div class="stats-guns-row">
+                      <img src="img/guns/pistol-3.png" class="stats-guns-item" alt="" />
+                    </div>
+                  </div>
+                  <div class="stats-row-right">
+                    <div class="stats-result">В игре</div>
+                  </div>
+                </div>
+                <div class="stats-row">
+                  <div class="stats-row-left">
+                    <div class="stats-avatar">
+                      <img src="img/people/person-5.png" alt="" />
+                    </div>
+                    <p class="stats-amount">$ 278,15</p>
+                    <div class="stats-guns-row">
+                      <img src="img/guns/pistol-2.png" class="stats-guns-item" alt="" />
+                    </div>
+                  </div>
+                  <div class="stats-row-right">
+                    <div class="stats-result">В игре</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="chat-col">
+              <div class="chat scroll">
+                <div class="chat-msg">
+                  <div class="chat-msg-avatar">
+                    <img src="img/people/user-4.png" alt="" />
+                  </div>
+                  <div class="chat-msg-main">
+                    <div class="chat-msg-user">
+                      <p class="chat-msg-name chat-msg-name-blue">Talan</p>
+                      <span class="chat-msg-rank chat-msg-rank-green"><span>4</span></span>
+                    </div>
+                    <p class="chat-msg-text">
+                      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit official consequat
+                      duis enim velit mollit.
+                    </p>
+                    <time class="chat-msg-time">14:45</time>
+                  </div>
+                </div>
+                <div class="chat-msg">
+                  <div class="chat-msg-avatar">
+                    <img src="img/people/user-4.png" alt="" />
+                  </div>
+                  <div class="chat-msg-main">
+                    <div class="chat-msg-user">
+                      <p class="chat-msg-name chat-msg-name-blue">Talan</p>
+                      <span class="chat-msg-rank chat-msg-rank-green"><span>4</span></span>
+                    </div>
+                    <p class="chat-msg-text">
+                      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit official consequat
+                      duis enim velit mollit.
+                    </p>
+                    <time class="chat-msg-time">14:45</time>
+                  </div>
+                </div>
+                <div class="chat-msg">
+                  <div class="chat-msg-avatar">
+                    <img src="img/people/user-4.png" alt="" />
+                  </div>
+                  <div class="chat-msg-main">
+                    <div class="chat-msg-user">
+                      <p class="chat-msg-name chat-msg-name-blue">Talan</p>
+                      <span class="chat-msg-rank chat-msg-rank-green"><span>4</span></span>
+                    </div>
+                    <p class="chat-msg-text">
+                      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit official consequat
+                      duis enim velit mollit.
+                    </p>
+                    <time class="chat-msg-time">14:45</time>
+                  </div>
+                </div>
+                <div class="chat-msg">
+                  <div class="chat-msg-avatar">
+                    <img src="img/people/user-4.png" alt="" />
+                  </div>
+                  <div class="chat-msg-main">
+                    <div class="chat-msg-user">
+                      <p class="chat-msg-name chat-msg-name-blue">Talan</p>
+                      <span class="chat-msg-rank chat-msg-rank-green"><span>4</span></span>
+                    </div>
+                    <p class="chat-msg-text">
+                      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit official consequat
+                      duis enim velit mollit.
+                    </p>
+                    <time class="chat-msg-time">14:45</time>
+                  </div>
+                </div>
+                <div class="chat-msg">
+                  <div class="chat-msg-avatar">
+                    <img src="img/people/user-3.png" alt="" />
+                  </div>
+                  <div class="chat-msg-main">
+                    <div class="chat-msg-user">
+                      <p class="chat-msg-name">
+                        <img src="img/icons/brand-youtube.svg" class="chat-msg-name-icon" alt="" />
+                        Martin
+                      </p>
+                      <span class="chat-msg-rank chat-msg-rank-blue"><span>6</span></span>
+                    </div>
+                    <p class="chat-msg-text">Amet minim mollit non deserunt</p>
+                    <time class="chat-msg-time">14:45</time>
+                  </div>
+                </div>
+                <div class="chat-msg">
+                  <div class="chat-msg-avatar">
+                    <img src="img/people/user-2.png" alt="" />
+                  </div>
+                  <div class="chat-msg-main">
+                    <div class="chat-msg-user">
+                      <p class="chat-msg-name chat-msg-name-green">
+                        <img src="img/icons/anchor.svg" class="chat-msg-name-icon" alt="" />
+                        Chance
+                      </p>
+                      <span class="chat-msg-rank chat-msg-rank-green"><span>4</span></span>
+                    </div>
+                    <p class="chat-msg-text">
+                      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit official consequat
+                      duis enim velit mollit.
+                    </p>
+                    <time class="chat-msg-time">14:45</time>
+                  </div>
+                </div>
+                <div class="chat-msg">
+                  <div class="chat-msg-avatar">
+                    <img src="img/people/user-1.png" alt="" />
+                  </div>
+                  <div class="chat-msg-main">
+                    <div class="chat-msg-user">
+                      <p class="chat-msg-name">Martin</p>
+                      <span class="chat-msg-rank"><span>1</span></span>
+                    </div>
+                    <p class="chat-msg-text">
+                      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit official consequat
+                      duis enim velit mollit.
+                    </p>
+                    <time class="chat-msg-time">14:45</time>
+                  </div>
+                </div>
+              </div>
+              <form class="form form-chat" action="">
+                <input type="text" placeholder="Текст сообщения" class="form-input-text form-input-text-chat" />
+                <div class="form-chat-counter">
+                  <span class="form-chat-counter-current">0</span>
+                  <span class="form-chat-counter-total">/ 140</span>
+                </div>
+                <input type="submit" class="btn btn-chat" value="" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

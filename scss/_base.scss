@@ -17,42 +17,100 @@
 * {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  max-height: 100%;
 }
 
 // scrollbars start
 /* Works on Firefox */
-* {
+.scroll {
+  overflow-y: auto;
   scrollbar-width: thin;
-  scrollbar-color: rgba($color-border, .5) rgba($color-border, .1);
+  scrollbar-color: rgba($color-border, 0.5) rgba($color-border, 0.1);
 }
 
 /* Works on Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-  width: 12px;
+.scroll::-webkit-scrollbar {
+  width: 0.75rem;
 }
 
-*::-webkit-scrollbar-track {
-  background: rgba($color-border, .1);
+.scroll::-webkit-scrollbar-track {
+  background: rgba($color-border, 0.1);
 }
 
-*::-webkit-scrollbar-thumb {
-  background-color: rgba($color-border, .5);
-  border-radius: 20px;
-  border: 3px solid rgba($color-border, .1);
+.scroll::-webkit-scrollbar-thumb {
+  background-color: rgba($color-border, 0.5);
+  border-radius: 1.25rem;
+  border: 0.1875rem solid rgba($color-border, 0.1);
 }
 // scrollbars end
+
+html {
+  @media (max-width: 1680px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 1440px) {
+    font-size: 13px;
+  }
+
+  @media (max-width: 1366px) {
+    font-size: 12px;
+  }
+
+  @media (max-width: 1280px) {
+    font-size: 11px;
+  }
+}
 
 body {
   margin: 0;
   background-color: $bg-main;
 }
 
-.d-flex {
+.d-flex,
+.row {
   display: flex;
 }
 
-.left-col {
+.row {
+  gap: 1vw;
+  height: 100%;
+}
+
+.container {
+  &-general {
+    gap: 0.75rem;
+    max-height: 100vh;
+  }
+}
+
+.left-col, .right-col {
   display: flex;
   flex-direction: column;
+  max-height: 100vh;
+}
+
+.left-col {
   align-items: center;
+  width: 24vw;
+}
+
+.right-col {
+  flex-grow: 1;
+  max-width: 68vw;
+}
+
+.main-col {
+  max-width: 45vw;
+  flex-grow: 1;
+
+  &-full {
+    max-width: 100%;
+  }
+}
+
+.chat-col {
+  width: 25vw;
+  max-height: 80vh;
+  margin-left: auto;
 }
