@@ -1,4 +1,5 @@
 .chat {
+  position: relative;
   &-msg {
     display: flex;
     margin: 1.5rem 0;
@@ -108,6 +109,65 @@
         &:before {
           background-color: $bg-main;
         }
+      }
+    }
+  }
+  &-fixed {
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    background: rgba(78, 112, 233, 0.8);
+    backdrop-filter: blur(4px);
+    border-radius: 16px;
+    padding: 1rem 1.5rem;
+
+    &-sign {
+      margin: 0;
+      font-size: 0.625rem;
+      line-height: 0.9375rem;
+      color: #ffffff;
+    }
+
+    &-bonus {
+      display: flex;
+      align-items: center;
+      margin-top: 1rem;
+
+      &-name {
+        font-weight: 700;
+        font-size: 0.875rem;
+        line-height: 1.3125rem;
+        color: #ffffff;
+        margin: 0;
+      }
+
+      &-used {
+        font-weight: 600;
+        font-size: 0.75rem;
+        line-height: 1.125rem;
+        color: #ffffff;
+        opacity: 0.4;
+        margin: 0.25rem 0 0;
+      }
+    }
+
+    &-coupon {
+      margin-left: auto;
+      width: 7.0625rem;
+      height: 3rem;
+      background-image: url(../img/icons/coupon.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      span {
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        color: #ffffff;
       }
     }
   }
