@@ -3,6 +3,7 @@
   padding-left: 2vw;
   display: flex;
   align-items: center;
+  width: 100%;
   &-links {
     display: flex;
     align-items: center;
@@ -11,6 +12,9 @@
     padding: 0;
     margin: 0;
     gap: 2.1875rem;
+    &:first-of-type {
+      margin-right: auto;
+    }
     &-chat {
       cursor: pointer;
 
@@ -19,7 +23,7 @@
       }
     }
     &-item {
-      transition: .3s;
+      transition: 0.3s;
       &-text {
         font-size: 0.875rem;
         font-weight: 600;
@@ -62,13 +66,15 @@
     margin-right: 4rem;
   }
   &-profile {
-    display: flex;
-    align-items: center;
-    margin-right: 2.5rem;
-    background-color: rgba($color-border, .1);
-    padding: 0.875rem;
-    text-decoration: none;
-    border-radius: 0.5rem;
+    &-status {
+      display: flex;
+      align-items: center;
+      margin-right: 2.5rem;
+      background-color: rgba($color-border, 0.1);
+      padding: 0.875rem;
+      text-decoration: none;
+      border-radius: 0.5rem;
+    }
     &-flag {
       max-width: 1.25rem;
       margin-right: 0.75rem;
@@ -82,6 +88,38 @@
       font-size: 1.125rem;
       line-height: 1.3125rem;
       color: white;
+    }
+    &-options {
+      display: flex;
+      align-items: center;
+      .header-links {
+        gap: 1.5rem;
+        margin: 0 2rem;
+      }
+      .header-links-item-text img,
+      .header-links-item-text svg {
+        margin-right: 0;
+      }
+    }
+    &-info {
+      display: flex;
+      align-items: center;
+      margin-left: 2rem;
+      .avatar {
+        margin-right: 0.75rem;
+      }
+      &-name,
+      &-sum {
+        margin: 0;
+        color: white;
+        font-weight: 600;
+        font-size: 0.875rem;
+        line-height: 1.3125rem;
+      }
+      &-sum {
+        margin: 0;
+        color: $color-gold;
+      }
     }
   }
 }

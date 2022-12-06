@@ -183,7 +183,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 40%;
+    max-width: 100%;
   }
 
   &-l {
@@ -282,6 +282,7 @@
   &-request {
     padding: 5vh 2rem;
     width: 100%;
+    flex-grow: 1;
 
     .text {
       color: white;
@@ -307,7 +308,7 @@
       }
     }
     &-settings {
-      margin-left: 2rem;
+      margin-left: 1.5rem;
     }
     &-inventory {
       margin-bottom: 1.5rem;

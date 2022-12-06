@@ -82,6 +82,7 @@ body {
   &-general {
     gap: 0.75rem;
     max-height: 100vh;
+    flex-grow: 1;
   }
 }
 
@@ -98,12 +99,16 @@ body {
 
 .right-col {
   flex-grow: 1;
-  max-width: 68vw;
+  max-width: 69vw;
+
+  &:only-child {
+    max-width: unset;
+  }
 }
 
 .main-col {
   width: 65vw;
-  max-height: 85vh;
+  max-height: 87vh;
   flex-grow: 1;
   transition: .3s;
 
