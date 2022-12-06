@@ -1,3 +1,9 @@
+// chat open
+document.querySelector(".header-links-chat").addEventListener("click", function () {
+    this.classList.toggle("chat-close");
+    document.querySelector(".right-col").classList.toggle("chat-col-hidden");
+});
+
 // timer
 // Set the date we're counting down to
 const countDownDate = new Date("Dec 24, 2022 00:00:00").getTime();

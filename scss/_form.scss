@@ -1,67 +1,78 @@
 .form {
-    &-input {
-      &-text {
-        background-color: $color-placeholder;
-        border: 1px solid $color-text-body;
-        font-weight: 600;
-        font-size: 1rem;
-        line-height: 1.5rem;
-        padding: 0.75rem 1rem;
-        border-radius: 0.5rem;
-        color: white;
-        outline: none;
-        transition: 0.3s;
-  
-        &::placeholder {
-          color: rgba($color-text-body, 0.5);
-          transition: .3s;
-        }
-  
-        &:hover {
-          &::placeholder {
-            color: rgba($color-text-body, 1);
-          }
-        }
-  
-        &:focus {
-          border-color: $color-lightblue;
-        }
-  
-        &[disabled] {
-          color: rgba($color-text-body, 0.5);
-          border-color: $color-placeholder;
-        }
-  
-        &-success {
-          border-color: $color-green;
-        }
-  
-        &-error {
-          border-color: $color-red;
-        }
-      }
-    }
-
-    &-chat {
-        display: flex;
-        align-items: center;
-        position: relative;
-
-        .form-input-text {
-            min-width: 16.875rem;
-            font-weight: 400;
-            background-color: #252f50;
-            border-color: #4e70e9;
-            padding-right: 5rem;
-            border-radius: 1rem;
-            flex-grow: 1;
-        }
-
-        &-counter {
-            color: $color-blue;
-            white-space: nowrap;
-            position: absolute;
-            right: 5rem;
-        }
+  &-label {
+    display: flex;
+    flex-direction: column;
+    &-text {
+      font-weight: 600;
+      font-size: 0.75rem;
+      line-height: 1.125rem;
+      color: $color-border;
+      margin-bottom: 0.5rem;
     }
   }
+  &-input {
+    &-text {
+      background-color: $color-placeholder;
+      border: 1px solid $color-text-body;
+      font-weight: 600;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      padding: 0.75rem 1rem;
+      border-radius: 0.5rem;
+      color: white;
+      outline: none;
+      transition: 0.3s;
+
+      &::placeholder {
+        color: rgba($color-text-body, 0.5);
+        transition: 0.3s;
+      }
+
+      &:hover {
+        &::placeholder {
+          color: rgba($color-text-body, 1);
+        }
+      }
+
+      &:focus {
+        border-color: $color-lightblue;
+      }
+
+      &[disabled] {
+        color: rgba($color-text-body, 0.5);
+        border-color: $color-placeholder;
+      }
+
+      &-success {
+        border-color: $color-green;
+      }
+
+      &-error {
+        border-color: $color-red;
+      }
+    }
+  }
+
+  &-chat {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .form-input-text {
+      min-width: 16.875rem;
+      font-weight: 400;
+      background-color: #252f50;
+      border-color: #4e70e9;
+      padding-right: 5rem;
+      border-radius: 1rem;
+      flex-grow: 1;
+    }
+
+    &-counter {
+      color: $color-blue;
+      white-space: nowrap;
+      position: absolute;
+      right: 5rem;
+    }
+  }
+}

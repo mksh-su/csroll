@@ -72,6 +72,7 @@
     margin-right: 0.625rem;
     transition: 0.3s;
     white-space: nowrap;
+    transition: .3s;
 
     &-gold {
       border-color: $color-gold;
@@ -99,6 +100,33 @@
 
       &:hover {
         background-color: rgba($color-purple, 0.3);
+      }
+    }
+  }
+  &-choice {
+    &-container {
+      padding: 0;
+      background-color: transparent;
+      border-radius: 0;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &-row {
+      display: flex;
+    }
+    &-item {
+      padding: 1rem;
+      border-radius: 1rem;
+      line-height: 1;
+      font-weight: 600;
+      cursor: pointer;
+      background-color: rgba($color-blue, 0.1);
+      color: $color-blue;
+      border-color: transparent;
+
+      &.active {
+        background-color: $color-blue;
+        color: white;
       }
     }
   }
@@ -262,8 +290,21 @@
   }
   &-items {
     display: flex;
+    .btn-auth {
+      background-image: url(../img/other/auth-btn-bg.svg);
+      background-size: cover;
+      background-position: center;
+    }
     .auth-wait {
       padding: 0;
+    }
+    &-deposit {
+      display: flex;
+      align-items: flex-end;
+      .form-input-text {
+        max-width: 8rem;
+        margin-right: 1rem;
+      }
     }
     &-settings {
       margin-left: 2rem;
@@ -309,6 +350,8 @@
           line-height: 0.9375rem;
           color: $color-text-body;
           margin: 0;
+          padding-right: 0.5rem;
+          max-width: 80%;
         }
       }
       &-dots {

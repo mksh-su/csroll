@@ -65,6 +65,7 @@ html {
 body {
   margin: 0;
   background-color: $bg-main;
+  overflow-x: hidden;
 }
 
 .d-flex,
@@ -92,7 +93,7 @@ body {
 
 .left-col {
   align-items: center;
-  width: 24vw;
+  width: 23vw;
 }
 
 .right-col {
@@ -101,8 +102,10 @@ body {
 }
 
 .main-col {
-  max-width: 45vw;
+  width: 65vw;
+  max-height: 85vh;
   flex-grow: 1;
+  transition: .3s;
 
   &-full {
     max-width: 100%;
@@ -113,4 +116,5 @@ body {
   width: 25vw;
   max-height: 80vh;
   margin-left: auto;
+  transition: .3s;
 }
