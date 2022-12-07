@@ -30,6 +30,14 @@
   &-faded {
     color: $color-text-body;
   }
+  &-gold {
+    color: $color-gold;
+  }
+}
+
+.heading-icon {
+  max-width: 1.25rem;
+  margin-right: .75rem;
 }
 
 .btn {

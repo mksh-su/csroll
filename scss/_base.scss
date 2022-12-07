@@ -73,6 +73,10 @@ body {
   display: flex;
 }
 
+.f-wrap {
+  flex-wrap: wrap;
+}
+
 .row {
   gap: 1vw;
   height: 100%;
