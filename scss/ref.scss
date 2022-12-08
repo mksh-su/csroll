@@ -129,4 +129,15 @@
     line-height: 2.1875rem;
     font-weight: 700;
   }
+  &-details {
+    &-row {
+        width: 100%;
+        .accordion-container {
+            width: 28.125rem;
+        }
+    }
+  }
+  &-table {
+    flex-grow: 1;
+  }
 }

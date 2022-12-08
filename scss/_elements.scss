@@ -562,42 +562,63 @@
 }
 
 // accordion
-button.accordion {
+.accordion {
   width: 100%;
-  background-color: rgba($color-border, 0.1);
-  border-radius: 0.5rem;
-  border: none;
-  outline: none;
-  text-align: left;
-  padding: 0.75rem 1.5rem;
-  font-weight: 600;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  color: $color-text-body;
-  cursor: pointer;
+  margin-bottom: 0.75rem;
   transition: 0.3s;
+  &-btn {
+    background-color: rgba($color-border, 0.1);
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    text-align: left;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: $color-text-body;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+    width: 100%;
+    &:after {
+      content: "";
+      width: 0.75rem;
+      height: 0.375rem;
+      display: inline-block;
+      background-image: url(../img/icons/arrow-dropdown-dark.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      right: 1.875rem;
+      top: 45%;
+      transform: translate(-50%);
+      transition: 0.3s;
+    }
+  }
+  &-text {
+    color: white;
+    font-weight: 600;
+    font-size: 0.875rem;
+    margin: 0;
+    padding: 1rem 1.5rem 1.5rem;
+    display: none;
+  }
+  &.is-open {
+    background: rgba($color-border, .1);
+    border-radius: 16px;
+    .accordion-text {
+      display: block;
+    }
+  }
 }
 
-button.accordion:after {
-  font-family: FontAwesome;
-  content: "\f150";
-  font-family: "fontawesome";
-  font-size: 18px;
-  float: right;
+.accordion-btn.is-open:after {
+  transform: rotate(180deg);
 }
 
-button.accordion.is-open:after {
-  content: "\f151";
-}
-
-button.accordion:hover,
-button.accordion.is-open {
+.accordion-btn:hover,
+.accordion-btn.is-open {
   background-color: rgba($color-border, 0.2);
-}
-
-.accordion-content {
-  padding: 0 20px;
-  max-height: 0;
-  overflow: hidden;
-  transition: 0.3s;
 }

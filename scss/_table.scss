@@ -1,0 +1,16 @@
+.table {
+  &-row {
+    display: flex;
+    align-items: center;
+    background-color: rgba($color-border, .1);
+    border-radius: 1rem;
+    margin-bottom: 0.75rem;
+    padding: 0.5625rem 2.75rem 0.5625rem 1.5rem;
+    &-top {
+        display: flex;
+    }
+  }
+  &-heading {
+    color: $color-text-body;
+  }
+}
