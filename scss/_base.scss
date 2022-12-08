@@ -119,6 +119,10 @@ body {
   &-full {
     max-width: 100%;
   }
+
+  &-only {
+    margin: 0 .75rem;
+  }
 }
 
 .chat-col {

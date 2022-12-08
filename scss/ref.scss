@@ -1,0 +1,132 @@
+@import "variables";
+.top-ref {
+  background: rgba(69, 84, 137, 0.1);
+  border-radius: 1rem;
+  padding: 1.5rem 0;
+  flex-grow: 1;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  &:before {
+    content: "";
+    display: inline-block;
+    background: $color-gold;
+    opacity: 0.3;
+    filter: blur(50px);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate(50%, 50%);
+    width: 10.625rem;
+    height: 10.625rem;
+  }
+  &-row {
+    gap: 2.8125rem;
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+  }
+  &-img {
+    position: relative;
+    width: 8.75rem;
+
+    &-avatar {
+      position: relative;
+      height: 8.75rem;
+      z-index: 2;
+      top: 0.5rem;
+
+      img {
+        position: absolute;
+        width: 6.25rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &-bg {
+      position: absolute;
+      z-index: 1;
+      width: 8.75rem;
+      height: auto;
+    }
+  }
+  &-left,
+  &-right {
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  &-right {
+    &:before {
+      content: "";
+      width: 0.0625rem;
+      height: 100%;
+      display: inline-block;
+      background: rgba($color-text-body, 0.1);
+      border-radius: 1px;
+      position: absolute;
+      left: 0;
+    }
+  }
+  &-text {
+    text-align: center;
+  }
+  &-stats {
+    background: rgba($color-border, 0.1);
+    border-radius: 8px;
+    padding: 0.5rem 1.5rem;
+    &-number {
+      font-size: 1.5rem;
+      line-height: 2.25rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0;
+    }
+    &-sign {
+      font-weight: 600;
+      font-size: 0.75rem;
+      line-height: 1.125rem;
+      text-align: center;
+      color: $color-text-body;
+      margin: 0;
+    }
+  }
+  &-name {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 100%;
+    color: #ffffff;
+  }
+  &-item {
+    margin: 0;
+    text-align: center;
+    font-weight: 600;
+    color: $color-text-body;
+    &-subheading {
+      font-weight: 700;
+      font-size: 0.625rem;
+      line-height: 1.125rem;
+      color: $color-text-body;
+    }
+    &-name {
+      display: block;
+      font-weight: 500;
+      color: white;
+      margin-bottom: 0.25rem;
+    }
+    &-img {
+      width: 7.5rem;
+      margin-top: 1rem;
+    }
+  }
+  &-sum {
+    color: $color-gold;
+    font-size: 1.5rem;
+    line-height: 2.1875rem;
+    font-weight: 700;
+  }
+}
