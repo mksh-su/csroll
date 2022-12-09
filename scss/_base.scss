@@ -77,9 +77,12 @@ body {
   flex-wrap: wrap;
 }
 
+.h-100 {
+  height: 100%;
+}
+
 .row {
   gap: 1vw;
-  height: 100%;
 }
 
 .container {
