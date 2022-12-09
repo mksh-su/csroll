@@ -407,6 +407,7 @@
     border-radius: 16px;
     padding: 0.625rem 1.75rem 0.625rem 1.25rem;
     margin: 0.75rem 0;
+
     &-left,
     &-right {
       width: 55%;
@@ -528,6 +529,13 @@
   }
 }
 
+.history-link {
+  margin: 0 0 0 1.25rem;
+  img {
+    width: 1.125rem;
+  }
+}
+
 .stake {
   display: flex;
   flex-direction: column;
@@ -606,7 +614,7 @@
     display: none;
   }
   &.is-open {
-    background: rgba($color-border, .1);
+    background: rgba($color-border, 0.1);
     border-radius: 16px;
     .accordion-text {
       display: block;
@@ -621,4 +629,18 @@
 .accordion-btn:hover,
 .accordion-btn.is-open {
   background-color: rgba($color-border, 0.2);
+}
+
+.box {
+  background-color: rgba($color-border, 0.1);
+  border-radius: 1rem;
+  padding: 1.75rem 2rem 1.5rem;
+  &-heading {
+    display: flex;
+  }
+}
+
+.game-stats {
+  display: flex;
+  gap: 1rem;
 }

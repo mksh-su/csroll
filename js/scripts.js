@@ -1,5 +1,5 @@
 // chat open
-document.querySelector(".header-links-chat").addEventListener("click", function () {
+document.querySelector(".header-links-chat")?.addEventListener("click", function () {
     this.classList.toggle("chat-close");
     document.querySelector(".right-col").classList.toggle("chat-col-hidden");
 });
