@@ -637,10 +637,68 @@
   padding: 1.75rem 2rem 1.5rem;
   &-heading {
     display: flex;
+    align-items: center;
+    width: 100%;
+    &-icon {
+      margin-right: 1rem;
+      max-height: 1rem;
+    }
+    &-name {
+      font-weight: 600;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      color: #ffffff;
+      margin-right: 1.5rem;
+    }
   }
 }
 
-.game-stats {
-  display: flex;
-  gap: 1rem;
+.game {
+  &-stats {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  &-single {
+    flex-grow: 1;
+    .hash-text {
+      max-width: 25rem;
+    }
+  }
+  &-chance {
+    background: rgba($color-border, 0.1);
+    border-radius: 0.5rem;
+    color: #576CB0;
+    text-align: center;
+    padding: 0.875rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    margin-top: 1.25rem;
+  }
+  &-profile {
+    &-info {
+      display: flex;
+      align-items: center;
+      margin: 1.5rem 0 1.25rem 0;
+      .avatar {
+        img {
+          width: 50px;
+        }
+      }
+      &-text {
+        margin-left: 1rem;
+      }
+      &-name, &-sum {
+        margin: 0;
+        color: #fff;
+        font-weight: 600;
+        font-size: .875rem;
+        line-height: 1.3125rem;
+      }
+      &-sum {
+        color: $color-gold;
+      }
+    }
+  }
 }
