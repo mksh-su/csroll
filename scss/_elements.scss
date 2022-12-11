@@ -288,6 +288,10 @@
       color: white;
       margin-bottom: 1.5rem;
     }
+
+    @media (max-width: 1180px) {
+      padding-top: 0;
+    }
   }
   &-items {
     display: flex;
@@ -298,6 +302,7 @@
     }
     .auth-wait {
       padding: 0;
+      flex-grow: 1;
     }
     &-deposit {
       display: flex;
@@ -451,6 +456,10 @@
             font-size: 1rem;
             white-space: nowrap;
           }
+        }
+
+        @media (max-width: 1366px) {
+          margin-left: auto;
         }
       }
     }
@@ -743,5 +752,25 @@
         color: $color-gold;
       }
     }
+  }
+}
+
+.giveaway-sign {
+  display: flex;
+  align-items: center;
+  color: $color-text-body;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+  font-weight: 600;
+  &-timer {
+    margin-left: 1rem;
+    font-family: "DS-Digital";
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 100%;
+    color: #fff;
+    padding: 0.3125rem 0.4375rem;
+    background-color: $color-placeholder;
+    border-radius: 0.1875rem;
   }
 }

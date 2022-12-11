@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="46px" height="52px" viewBox="0 0 46 52" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M0 0L46 0L46 52L0 52L0 0Z" id="path_1" />
+    <clipPath id="mask_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="ref-shield-money">
+    <path d="M0 0L46 0L46 52L0 52L0 0Z" id="Background" fill="#FFFFFF" fill-opacity="0" fill-rule="evenodd" stroke="none" />
+    <g clip-path="url(#mask_1)">
+      <path d="M44.3333 23.8187C44.3333 35.928 35.232 47.2507 23 50C10.768 47.2507 1.6667 35.928 1.6667 23.8187L1.6667 13.3147C1.6667 11.1493 2.976 9.1973 4.9813 8.3787L18.3147 2.92267C21.3173 1.69334 24.6827 1.69334 27.6853 2.92267L41.0187 8.3787C43.024 9.2 44.3333 11.1493 44.3333 13.3147L44.3333 23.8187L44.3333 23.8187L44.3333 23.8187Z" id="Shape" fill="none" fill-rule="evenodd" stroke="#576CB0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <g id="Group" transform="translate(22 14)">
+        <path d="M1 2.6667L1 0" id="Line" fill="none" fill-rule="evenodd" stroke="#576CB0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      </g>
+      <g id="Group" transform="translate(22 32.6667)">
+        <path d="M1 0L1 2.6667" id="Line" fill="none" fill-rule="evenodd" stroke="#576CB0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      </g>
+      <path d="M18.3707 30.76C19.0613 31.8907 20.24 32.672 21.6667 32.672L23 32.672L24.5893 32.672C26.6587 32.672 28.3333 30.9947 28.3333 28.928C28.3333 27.2107 27.1627 25.7147 25.4987 25.2933L20.4987 24.0373C18.8373 23.6213 17.6667 22.1253 17.6667 20.408C17.6667 18.3387 19.344 16.664 21.4107 16.664L23 16.664L24.3333 16.664C25.7547 16.664 26.9333 17.4427 27.6213 18.5707" id="Shape" fill="none" stroke="#576CB0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+  </g>
+</svg>

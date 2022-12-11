@@ -33,6 +33,9 @@
   &-gold {
     color: $color-gold;
   }
+  &-darkblue {
+    color: $color-text-body;
+  }
 }
 
 .heading-icon {
@@ -61,6 +64,9 @@
 
   &-m {
     padding: 0.8125rem 2rem;
+    @media (max-width: 1366px) {
+      padding: 0.8125rem 1.25rem;
+    }
   }
 
   &-icon {

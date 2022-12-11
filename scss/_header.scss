@@ -4,6 +4,14 @@
   display: flex;
   align-items: center;
   width: 100%;
+  @media (max-width: 1180px) {
+    position: fixed;
+    top: 0;
+    background: linear-gradient(251.16deg, rgba(37, 47, 80, 0) -17.49%, rgba(37, 47, 80, 0.5) 104.25%), #1E2542;
+    z-index: 999;
+    padding: 1rem 1.5rem 1rem 1rem;
+    margin: 0;
+  }
   &-links {
     display: flex;
     align-items: center;
@@ -146,6 +154,11 @@
     width: 100%;
     list-style: none;
 
+    @media (max-width: 1180px) {
+      flex-direction: row;
+      display: flex;
+    }
+
     &-item {
       position: relative;
 
@@ -227,5 +240,12 @@
     img {
       max-width: 3vh;
     }
+  }
+
+  @media (max-width: 1180px) {
+    width: 100%;
+    max-width: 100%;
+    flex-direction: row;
+    min-height: auto;
   }
 }
