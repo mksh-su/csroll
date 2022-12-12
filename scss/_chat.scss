@@ -1,10 +1,13 @@
 .chat {
   position: relative;
   transition: 0.3s;
+  @media (max-width: 1180px) {
+    max-height: 80vh;
+  }
   &-col {
     &-hidden {
       .main-col {
-        max-width: 67vw;
+        width: 100%;
       }
       .chat-col {
         transform: translateX(110%);

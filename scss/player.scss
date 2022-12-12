@@ -25,6 +25,10 @@
     width: 100%;
     height: auto;
     margin-top: 1rem;
+
+    @media (max-width: 1180px) {
+      gap: 2rem;
+    }
   }
   &-img {
     position: relative;
@@ -135,6 +139,11 @@
       .accordion-container {
         width: 28.125rem;
         margin-top: 3.4rem;
+
+        @media (max-width: 1180px) {
+          width: 100%;
+          margin: 1rem 0;
+        }
       }
     }
   }
@@ -207,6 +216,9 @@
     width: 100%;
     height: auto;
     margin-top: 1rem;
+    @media (max-width: 1180px) {
+      max-height: unset;
+    }
   }
   &-img {
     position: relative;
@@ -240,22 +252,13 @@
     display: flex;
     align-items: center;
     position: relative;
+    justify-content: center;
   }
   &-left {
     flex-direction: column;
   }
   &-right {
     padding: 1.25rem 1.5rem 0;
-    &:before {
-      content: "";
-      width: 0.0625rem;
-      height: 100%;
-      display: inline-block;
-      background: rgba($color-text-body, 0.1);
-      border-radius: 1px;
-      position: absolute;
-      left: 0;
-    }
   }
   &-text {
     text-align: center;
