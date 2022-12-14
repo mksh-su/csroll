@@ -1,7 +1,7 @@
 // chat open
 document.querySelector(".header-links-chat")?.addEventListener("click", function () {
-    this.classList.toggle("chat-close");
-    document.querySelector(".right-col").classList.toggle("chat-col-hidden");
+  this.classList.toggle("chat-close");
+  document.querySelector(".right-col").classList.toggle("chat-col-hidden");
 });
 
 // timer
@@ -48,3 +48,30 @@ accordionBtns.forEach((accordion) => {
     content.classList.toggle("is-open");
   };
 });
+
+// tablet
+const mediaQuery1180 = window.matchMedia("(max-width: 1180px)");
+if (mediaQuery1180.matches) {
+  // desktop containers
+  let logoDesk = document.getElementsByClassName("nav-logo")[0];
+  let topHeaderTabsContent = document.getElementsByClassName("header-links")[0];
+
+  // new containers
+  let logoMob = document.getElementsByClassName("header-mob-logo")[0];
+  let topHeaderTabsMobileContent = document.getElementsByClassName("header-mob-inner")[0];
+
+  // moving the desktop elements to new containers
+  logoMob.appendChild(logoDesk);
+  topHeaderTabsMobileContent.appendChild(topHeaderTabsContent);
+}
+
+// mobile
+const mediaQuery768 = window.matchMedia("(max-width: 768px)");
+if (mediaQuery768.matches) {
+  document.querySelector(".header-links-chat").classList.add("chat-close");
+  document.querySelector(".right-col").classList.add("chat-col-hidden");
+
+  document.querySelector(".nav-mob-burger")?.addEventListener("click", function () {
+    this.classList.toggle("active");
+  });  
+}

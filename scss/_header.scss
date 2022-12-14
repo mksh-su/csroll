@@ -7,7 +7,7 @@
   @media (max-width: 1180px) {
     position: fixed;
     top: 0;
-    background: linear-gradient(251.16deg, rgba(37, 47, 80, 0) -17.49%, rgba(37, 47, 80, 0.5) 104.25%), #1E2542;
+    background: linear-gradient(251.16deg, rgba(37, 47, 80, 0) -17.49%, rgba(37, 47, 80, 0.5) 104.25%), #1e2542;
     z-index: 999;
     padding: 1rem 1.5rem 1rem 1rem;
     margin: 0;
@@ -20,11 +20,15 @@
     padding: 0;
     margin: 0;
     gap: 2.1875rem;
+    @media (max-width: 1180px) {
+      display: none;
+    }
     &:first-of-type {
       margin-right: auto;
     }
     &-chat {
       cursor: pointer;
+      margin-left: 2.5rem;
 
       &.chat-close {
         transform: rotate(-180deg);
@@ -69,6 +73,9 @@
   }
   .notification {
     margin: 0 2.25rem 0 2rem;
+    @media (max-width: 1180px) {
+      display: none;
+    }
   }
   .btn-steam {
     margin-right: 4rem;
@@ -82,6 +89,9 @@
       padding: 0.875rem;
       text-decoration: none;
       border-radius: 0.5rem;
+      @media (max-width: 1180px) {
+        display: none;
+      }
     }
     &-flag {
       max-width: 1.25rem;
@@ -142,10 +152,53 @@
   flex-direction: column;
   align-items: center;
 
+  @media (max-width: 1180px) {
+    padding: 0.875rem 1.25rem;
+  }
+
   &-logo {
     max-width: 14vh;
     margin-bottom: -2vh;
     height: auto;
+  }
+
+  &-mob {
+    &-burger {
+      display: none;
+      z-index: 2;
+      background: rgba($color-blue, .1);
+      border-radius: 16px;
+      padding: 1rem;
+
+      @media (max-width: 1180px) {
+        display: inline-block;
+      }
+      &.active {
+        + .nav-bottom {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  &-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+
+    @media (max-width: 1180px) {
+      flex-direction: row;
+      width: 100%;
+      justify-content: center;
+      gap: 1.5rem;
+      z-index: 2;
+      position: absolute;
+      left: 0;
+      bottom: 100%;
+      background: linear-gradient(0deg, rgba(78, 112, 233, 0.1), rgba(78, 112, 233, 0.1)), rgba(33, 41, 71, 0.9);
+      display: none;
+    }
   }
 
   &-links {
@@ -158,6 +211,9 @@
     @media (max-width: 1180px) {
       flex-direction: row;
       display: flex;
+      margin-bottom: 0;
+      gap: 2rem;
+      z-index: 2;
     }
 
     &-item {
@@ -179,6 +235,10 @@
           position: absolute;
           left: -2px;
           top: 0;
+
+          @media (max-width: 1180px) {
+            display: none;
+          }
         }
 
         .nav-links-name,
@@ -193,10 +253,18 @@
         flex-direction: column;
         align-items: center;
         margin-top: 4vh;
+
+        @media (max-width: 1180px) {
+          margin-top: 0;
+        }
       }
 
       img {
         max-width: 4.5vh;
+
+        @media (max-width: 1180px) {
+          max-width: 2rem;
+        }
       }
     }
     &-name {
@@ -204,6 +272,9 @@
       font-size: 11px;
       font-weight: 700;
       margin: 0.75rem 0 0.4375rem;
+      @media (max-width: 1180px) {
+        display: none;
+      }
     }
     &-sum {
       background-color: rgba($color-border, 0.2);
@@ -213,6 +284,10 @@
       padding: 0.25rem 0.5rem;
       line-height: 1;
       font-weight: 700;
+      @media (max-width: 1180px) {
+        margin-top: 0.25rem;
+        background-color: transparent;
+      }
     }
   }
   &-social {
@@ -223,11 +298,21 @@
     &-logo {
       max-width: 3vh;
     }
+    @media (max-width: 1180px) {
+      flex-direction: row;
+    }
   }
   &-country {
-    background-color: rgba($color-border, 0.1);
     img {
       max-width: 3vh;
+    }
+    &-choice {
+      background-color: rgba($color-border, 0.1);
+      border-radius: 0.5rem;
+      padding: 0.875rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
   &-sound {
@@ -241,6 +326,9 @@
     img {
       max-width: 3vh;
     }
+    @media (max-width: 1180px) {
+      margin-bottom: 0;
+    }
   }
 
   @media (max-width: 1180px) {
@@ -248,5 +336,24 @@
     max-width: 100%;
     flex-direction: row;
     min-height: auto;
+    background: linear-gradient(0deg, rgba(78, 112, 233, 0.2), rgba(78, 112, 233, 0.2)), rgba(35, 44, 75, 0.9);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      position: absolute;
+      z-index: 1;
+      border-radius: 1rem;
+      background: linear-gradient(0deg, rgba(78, 112, 233, 0.2), rgba(78, 112, 233, 0.2)), rgba(35, 44, 75, 0.9);
+      filter: blur(4px);
+    }
   }
 }

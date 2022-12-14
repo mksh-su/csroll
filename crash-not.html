@@ -205,20 +205,25 @@
             </a>
           </li>
         </ul>
-        <div class="nav-social">
-          <a href=""><img src="img/logos/social/discord.svg" class="nav-social-logo" alt="" /></a>
-          <a href=""><img src="img/logos/social/telegram.svg" class="nav-social-logo" alt="" /></a>
-          <a href=""><img src="img/logos/social/vk.svg" class="nav-social-logo" alt="" /></a>
-          <a href=""><img src="img/logos/social/youtube.svg" class="nav-social-logo" alt="" /></a>
-        </div>
-        <div class="nav-country">
-          <img src="img/flags/china.svg" alt="" />
-        </div>
-        <div class="nav-sound">
-          <img src="img/icons/volume-on.svg" alt="" />
-        </div>
-        <div class="nav-settings">
-          <a href=""><img src="img/icons/settings.svg" alt="" /></a>
+        <div class="nav-mob-burger"><img src="img/icons/burger-bottom.svg" class="nav-mob-burger-icon" alt=""></div>
+        <div class="nav-bottom">
+          <div class="nav-social">
+            <a href=""><img src="img/logos/social/discord.svg" class="nav-social-logo" alt="" /></a>
+            <a href=""><img src="img/logos/social/telegram.svg" class="nav-social-logo" alt="" /></a>
+            <a href=""><img src="img/logos/social/vk.svg" class="nav-social-logo" alt="" /></a>
+            <a href=""><img src="img/logos/social/youtube.svg" class="nav-social-logo" alt="" /></a>
+          </div>
+          <div class="nav-country">
+            <div class="nav-country-choice">
+              <img src="img/flags/china.svg" alt="" />
+            </div>
+          </div>
+          <div class="nav-sound">
+            <img src="img/icons/volume-on.svg" alt="" />
+          </div>
+          <div class="nav-settings">
+            <a href=""><img src="img/icons/settings.svg" alt="" /></a>
+          </div>
         </div>
       </nav>
       <div class="container container-general d-flex">
@@ -459,12 +464,17 @@
             </a>
             <ul class="header-links">
               <li class="header-links-item"><a href="" class="header-links-item-text">Правила</a></li>
-              <li class="header-links-item header-links-chat">
-                <span class="header-links-item-text header-links-item-arrow">
-                  <img src="img/icons/arrow-right.svg" alt="" />
-                </span>
-              </li>
             </ul>
+            <div class="header-links-item header-links-chat">
+              <span class="header-links-item-text header-links-item-arrow">
+                <img src="img/icons/arrow-right.svg" alt="" />
+              </span>
+            </div>
+            <div class="header-mob">
+              <div class="header-mob-logo"></div>
+              <div class="header-mob-burger"></div>
+              <div class="header-mob-inner"></div>
+            </div>
           </header>
           <div class="row">
             <div class="main-col scroll">
@@ -533,46 +543,50 @@
                 <span class="ratio-item ratio-item-purple">2.2 x</span>
               </div>
               <div class="stats-row stats-row-top">
-                <img src="img/icons/loader.svg" class="stats-row-top-icon" alt="" />
-                <p class="stats-row-top-heading">Статистика раунда</p>
-                <div class="hash-text">
-                  <svg
-                    width="12"
-                    height="12"
-                    class="hash-text-icon"
-                    viewBox="0 0 12 12"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M5.99991 6C6.27605 6 6.49991 5.77614 6.49991 5.5C6.49991 5.22386 6.27605 5 5.99991 5C5.72377 5 5.49991 5.22386 5.49991 5.5C5.49991 5.77614 5.72377 6 5.99991 6ZM5.99991 6V7.25M5.99992 1.5C7.16783 2.53329 8.69215 3.07128 10.2499 3C10.4767 3.77151 10.5461 4.58073 10.454 5.37959C10.3619 6.17845 10.1101 6.95063 9.71362 7.65026C9.31716 8.34989 8.78411 8.96269 8.14614 9.45224C7.50818 9.94179 6.77831 10.2981 5.99992 10.5C5.22152 10.2981 4.49166 9.94179 3.85369 9.45224C3.21572 8.96269 2.68267 8.34989 2.28621 7.65026C1.88976 6.95063 1.63798 6.17845 1.54585 5.37959C1.45373 4.58073 1.52312 3.77151 1.74992 3C3.30768 3.07128 4.832 2.53329 5.99992 1.5Z"
-                      stroke="#4E70E9"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"></path>
-                  </svg>
-                  <span class="hash-text-content">fa26w444fa8w88f44w8a</span>
+                <div class="stats-row-top-left">
+                  <img src="img/icons/loader.svg" class="stats-row-top-icon" alt="" />
+                  <p class="stats-row-top-heading">Статистика раунда</p>
+                  <div class="hash-text">
+                    <svg
+                      width="12"
+                      height="12"
+                      class="hash-text-icon"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M5.99991 6C6.27605 6 6.49991 5.77614 6.49991 5.5C6.49991 5.22386 6.27605 5 5.99991 5C5.72377 5 5.49991 5.22386 5.49991 5.5C5.49991 5.77614 5.72377 6 5.99991 6ZM5.99991 6V7.25M5.99992 1.5C7.16783 2.53329 8.69215 3.07128 10.2499 3C10.4767 3.77151 10.5461 4.58073 10.454 5.37959C10.3619 6.17845 10.1101 6.95063 9.71362 7.65026C9.31716 8.34989 8.78411 8.96269 8.14614 9.45224C7.50818 9.94179 6.77831 10.2981 5.99992 10.5C5.22152 10.2981 4.49166 9.94179 3.85369 9.45224C3.21572 8.96269 2.68267 8.34989 2.28621 7.65026C1.88976 6.95063 1.63798 6.17845 1.54585 5.37959C1.45373 4.58073 1.52312 3.77151 1.74992 3C3.30768 3.07128 4.832 2.53329 5.99992 1.5Z"
+                        stroke="#4E70E9"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    </svg>
+                    <span class="hash-text-content">fa26w444fa8w88f44w8a</span>
+                  </div>
+                  <a href="" class="history-link"><img src="img/icons/history.svg" class="" alt="" /></a>
                 </div>
-                <a href="" class="history-link"><img src="img/icons/history.svg" class="" alt=""></a>
-                <div class="stats-row-top-item">
-                  <img src="img/icons/players.svg" alt="" />
-                  <p class="stats-row-top-item-text">
-                    <b>1 117</b>
-                    Игроков
-                  </p>
-                </div>
-                <div class="stats-row-top-item">
-                  <img src="img/icons/money.svg" alt="" />
-                  <p class="stats-row-top-item-text">
-                    <b>$ 9 771,87</b>
-                    Общий банк
-                  </p>
-                </div>
-                <div class="stats-row-top-item">
-                  <img src="img/icons/skins.svg" alt="" />
-                  <p class="stats-row-top-item-text">
-                    <b>187</b>
-                    Скинов
-                  </p>
+                <div class="stats-row-top-right">
+                  <div class="stats-row-top-item">
+                    <img src="img/icons/players.svg" alt="" />
+                    <p class="stats-row-top-item-text">
+                      <b>1 117</b>
+                      Игроков
+                    </p>
+                  </div>
+                  <div class="stats-row-top-item">
+                    <img src="img/icons/money.svg" alt="" />
+                    <p class="stats-row-top-item-text">
+                      <b>$ 9 771,87</b>
+                      Общий банк
+                    </p>
+                  </div>
+                  <div class="stats-row-top-item">
+                    <img src="img/icons/skins.svg" alt="" />
+                    <p class="stats-row-top-item-text">
+                      <b>187</b>
+                      Скинов
+                    </p>
+                  </div>
                 </div>
               </div>
               <div class="stats-container">
@@ -623,7 +637,7 @@
                     </div>
                   </div>
                   <div class="stats-row-right">
-                    <div class="stats-result">В игре</div>
+                    <div class="stats-result stats-result-in">В игре</div>
                   </div>
                 </div>
                 <div class="stats-row">
@@ -637,7 +651,7 @@
                     </div>
                   </div>
                   <div class="stats-row-right">
-                    <div class="stats-result">В игре</div>
+                    <div class="stats-result stats-result-in">В игре</div>
                   </div>
                 </div>
                 <div class="stats-row">
@@ -651,7 +665,7 @@
                     </div>
                   </div>
                   <div class="stats-row-right">
-                    <div class="stats-result">В игре</div>
+                    <div class="stats-result stats-result-in">В игре</div>
                   </div>
                 </div>
               </div>

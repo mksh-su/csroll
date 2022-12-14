@@ -440,6 +440,18 @@
       left: 47%;
     }
 
+    @media (max-width: 480px) {
+      left: 44vw;
+    }
+
+    @media (max-width: 370px) {
+      left: 43vw;
+    }
+
+    @media (max-width: 340px) {
+      left: 41vw;
+    }
+
     * {
       font-family: "DS-Digital";
       line-height: 0.6;
@@ -479,9 +491,10 @@
     display: flex;
     align-items: center;
     background-color: rgba($color-border, 0.1);
-    border-radius: 16px;
+    border-radius: 1rem;
     padding: 0.625rem 1.75rem 0.625rem 1.25rem;
     margin: 0.75rem 0;
+    overflow: hidden;
 
     &-left,
     &-right {
@@ -519,6 +532,12 @@
           font-size: 0.75rem;
           font-weight: 600;
           color: $color-text-body;
+          display: flex;
+          flex-direction: column;
+
+          @media (max-width: 768px) {
+            font-size: 0;
+          }
 
           b {
             color: white;
@@ -531,6 +550,45 @@
         @media (max-width: 1366px) {
           margin-left: auto;
         }
+
+        @media (max-width: 768px) {
+          margin: 0 auto;
+        }
+
+        @media (max-width: 480px) {
+          margin: 0 auto 0 0;
+        }
+      }
+      &-left {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 768px) {
+          padding: 1.125rem;
+        }
+
+        @media (max-width: 480px) {
+          .hash-text,
+          .code-text {
+            max-width: 8rem;
+          }
+        }
+      }
+      &-right {
+        display: flex;
+        flex-grow: 1;
+
+        @media (max-width: 768px) {
+          width: 100%;
+          background-color: rgba($color-border, 0.1);
+          padding: 1.25rem 1.125rem;
+        }
+      }
+
+      @media (max-width: 768px) {
+        flex-wrap: wrap;
+        margin: 0 1rem;
+        padding: 0;
       }
     }
     &-win {
@@ -546,6 +604,10 @@
       align-items: center;
       gap: 1rem;
       margin-left: 2rem;
+
+      @media (max-width: 768px) {
+        display: none;
+      }
     }
     &-item {
       max-height: 2.5rem;
@@ -589,8 +651,17 @@
     &-lose {
       background-color: rgba($color-red, 0.1);
     }
-    &:only-child {
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+
+    &-in {
       margin-left: auto;
+
+      @media (max-width: 768px) {
+        display: inline-block;
+      }
     }
   }
   &-money {
@@ -604,6 +675,10 @@
     }
     &-lose {
       color: $color-red;
+    }
+
+    @media (max-width: 768px) {
+      display: none;
     }
   }
 }
