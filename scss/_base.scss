@@ -44,6 +44,10 @@
 }
 // scrollbars end
 
+.no-scroll {
+  overflow: hidden;
+}
+
 html {
   @media (max-width: 1680px) {
     font-size: 14px;
@@ -143,6 +147,7 @@ body {
   @media (max-width: 1180px) {
     width: 100%;
     max-width: 100%;
+    margin-top: 5rem;
   }
 }
 
@@ -159,6 +164,7 @@ body {
 
   @media (max-width: 1180px) {
     max-width: 100vw;
+    margin-bottom: 5rem;
   }
 }
 
