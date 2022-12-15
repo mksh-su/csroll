@@ -130,7 +130,8 @@ body {
   }
 }
 
-.left-col, .right-col {
+.left-col,
+.right-col {
   display: flex;
   flex-direction: column;
   max-height: 100vh;
@@ -176,7 +177,7 @@ body {
   width: 53rem;
   max-height: 87vh;
   flex-grow: 1;
-  transition: .3s;
+  transition: 0.3s;
 
   @media (max-width: 1180px) {
     min-width: 100%;
@@ -189,29 +190,13 @@ body {
   }
 
   &-only {
-    margin: 0 .75rem;
+    margin: 0 0.75rem;
 
     @media (max-width: 1180px) {
       margin: 0 1rem;
       min-width: unset;
       max-width: calc(100% - 2rem);
     }
-  }
-}
-
-.chat-col {
-  width: 25rem;
-  max-height: 80vh;
-  margin-left: auto;
-  transition: .3s;
-
-  @media (max-width: 1280px) {
-    max-height: 85vh;
-  }
-
-  @media (max-width: 1180px) {
-    width: 100%;
-    max-height: unset;
   }
 }
 

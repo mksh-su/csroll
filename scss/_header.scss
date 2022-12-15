@@ -19,6 +19,10 @@
     flex-grow: 1;
     &-btn-steam {
       margin-left: auto;
+
+      span {
+        display: none;
+      }
     }
 
     &-inner {
@@ -60,6 +64,24 @@
     padding: 0;
     margin: 0;
     gap: 2.1875rem;
+
+    .btn-steam {
+      display: none;
+
+      @media (max-width: 1180px) {
+        display: flex;
+        width: 100%;
+        max-width: 768px;
+
+        span {
+          margin-left: .35rem;
+        }
+
+        .btn-icon {
+          margin-left: auto;
+        }
+      }
+    }
     @media (max-width: 1180px) {
       display: none;
     }
@@ -128,6 +150,12 @@
     margin-right: 4rem;
     @media (max-width: 768px) {
       margin-right: 2.25rem;
+      padding: 0.875rem 1.25rem;
+
+      .btn-icon {
+        width: 1rem;
+        height: 1rem;
+      }
     }
   }
   &-profile {
@@ -214,17 +242,29 @@
 
     @media (max-width: 768px) {
       max-width: 5rem;
-      margin: -1rem 0 -1rem -1rem;;
+      margin: -1rem 0 -1rem -1rem;
     }
   }
 
   &-mob {
-    &-burger {
+    &-burger, &-chat-btn {
       display: none;
       z-index: 2;
-      background: rgba($color-blue, 0.1);
-      border-radius: 16px;
-      padding: 1rem;
+      background-color: rgba($color-blue, 0.1);
+      background-image: url(../img/icons/burger-bottom.svg);
+      background-repeat: no-repeat;
+      background-size: 1.375rem;
+      background-position: center;
+      border-radius: 1rem;
+      min-width: 3rem;
+      height: 3rem;
+      transition: .3s;
+
+      &.active {
+        background-color: $color-blue;
+        background-image: url(../img/icons/header-close.svg);
+        background-size: 1rem;
+      }
 
       @media (max-width: 1180px) {
         display: inline-block;
@@ -234,6 +274,11 @@
           display: flex;
         }
       }
+    }
+    &-chat-btn {
+      margin-right: 1rem;
+      background-color: $color-blue;
+      background-image: url(../img/icons/chat-mob-white.svg);
     }
   }
 
@@ -270,6 +315,10 @@
       margin-bottom: 0;
       gap: 2rem;
       z-index: 2;
+    }
+
+    @media (max-width: 1180px) {
+      gap: 1rem;
     }
 
     &-item {
@@ -319,7 +368,8 @@
         max-width: 4.5vh;
 
         @media (max-width: 1180px) {
-          max-width: 2rem;
+          max-width: unset;
+          max-height: 1.5rem;
         }
       }
     }

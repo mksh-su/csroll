@@ -2,11 +2,16 @@
 document.querySelector(".header-links-chat")?.addEventListener("click", function () {
   this.classList.toggle("chat-close");
   document.querySelector(".right-col").classList.toggle("chat-col-hidden");
+  document.body.classList.toggle("no-scroll");
+});
+document.querySelector(".nav-mob-chat-btn")?.addEventListener("click", function () {
+  document.querySelector(".right-col").classList.toggle("chat-col-hidden");
+  document.body.classList.toggle("no-scroll");
 });
 
 // timer
 // Set the date we're counting down to
-const countDownDate = new Date("Dec 24, 2022 00:00:00").getTime();
+const countDownDate = new Date("Dec 30, 2023 00:00:00").getTime();
 const minutesEl = document.querySelector("#m");
 const secondsEl = document.querySelector("#s");
 if (secondsEl) {

@@ -71,6 +71,10 @@
     border-radius: 16px;
     padding: 0.75rem 1rem;
     margin-bottom: 1rem;
+
+    @media (max-width: 768px) {
+      margin: 0 1.25rem 1rem;
+    }
   }
   &-item {
     color: white;
@@ -84,6 +88,12 @@
     transition: 0.3s;
     white-space: nowrap;
     transition: 0.3s;
+
+    &:last-of-type {
+      @media (max-width: 1180px) {
+        margin-right: 0;
+      }
+    }
 
     &-gold {
       border-color: $color-gold;
@@ -121,6 +131,10 @@
       border-radius: 0;
       flex-direction: column;
       align-items: flex-start;
+
+      @media (max-width: 768px) {
+        margin: 0 0 1rem;
+      }
     }
     &-row {
       display: flex;
@@ -320,6 +334,9 @@
     .auth-wait {
       padding: 0;
       flex-grow: 1;
+      @media (max-width: 768px) {
+        display: none;
+      }
     }
     &-deposit {
       display: flex;
@@ -440,9 +457,14 @@
       left: 47%;
     }
 
+    @media (max-width: 768px) {
+      top: 50%;
+      left: 42%;
+    }
+
     @media (max-width: 480px) {
-      left: 41%;
       top: 46%;
+      left: 41%;
     }
 
     @media (max-width: 370px) {
@@ -487,6 +509,10 @@
 .stats {
   &-container {
     overflow-y: auto;
+
+    @media (max-width: 768px) {
+      margin: 0 1.25rem;
+    }
   }
   &-row {
     display: flex;
@@ -496,6 +522,10 @@
     padding: 0.625rem 1.75rem 0.625rem 1.25rem;
     margin: 0.75rem 0;
     overflow: hidden;
+
+    @media (max-width: 768px) {
+      padding: 0.625rem 1rem;
+    }
 
     &-left,
     &-right {
@@ -516,6 +546,10 @@
         font-size: 1rem;
         white-space: nowrap;
         margin: 0 1.5rem 0 1rem;
+
+        @media (max-width: 768px) {
+          white-space: initial;
+        }
       }
 
       &-item {
@@ -526,6 +560,10 @@
         img {
           margin-right: 1rem;
           max-height: 1.5rem;
+
+          @media (max-width: 768px) {
+            margin-right: 0.625rem;
+          }
         }
 
         &-text {
@@ -625,6 +663,10 @@
     width: 3.125rem;
     height: 3.125rem;
     border-radius: 50%;
+
+    @media (max-width: 768px) {
+      margin-right: 1rem;
+    }
 
     img {
       position: absolute;

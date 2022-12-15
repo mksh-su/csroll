@@ -73,6 +73,15 @@
       white-space: nowrap;
       position: absolute;
       right: 5rem;
+
+      @media (max-width: 1180px) {
+        right: 6.5rem;
+      }
+    }
+
+    @media (max-width: 1180px) {
+      padding: 1rem 1.25rem;
+      z-index: 2;
     }
   }
 }
