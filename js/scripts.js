@@ -76,6 +76,12 @@ if (mediaQuery1180.matches) {
     document.body.classList.toggle("no-scroll");
   });  
 
+  document.querySelector(".header-mob-close")?.addEventListener("click", function () {
+    document.querySelector(".header-mob-burger").classList.toggle("active");
+    document.querySelector(".header-mob-inner").classList.toggle("active");
+    document.body.classList.toggle("no-scroll");
+  });
+
   document.querySelector(".nav-mob-burger")?.addEventListener("click", function () {
     this.classList.toggle("active");
   });  

@@ -441,15 +441,16 @@
     }
 
     @media (max-width: 480px) {
-      left: 44vw;
+      left: 41%;
+      top: 46%;
     }
 
     @media (max-width: 370px) {
-      left: 43vw;
+      left: 37%;
     }
 
     @media (max-width: 340px) {
-      left: 41vw;
+      // left: 41vw;
     }
 
     * {

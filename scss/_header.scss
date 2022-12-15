@@ -126,6 +126,9 @@
   }
   .btn-steam {
     margin-right: 4rem;
+    @media (max-width: 768px) {
+      margin-right: 2.25rem;
+    }
   }
   &-profile {
     &-status {
@@ -211,7 +214,7 @@
 
     @media (max-width: 768px) {
       max-width: 5rem;
-      margin: -1rem 0;
+      margin: -1rem 0 -1rem -1rem;;
     }
   }
 
