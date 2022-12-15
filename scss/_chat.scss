@@ -250,6 +250,23 @@
         color: #FFFFFF; 
     }
   }
+  &-mob {
+    &-control {
+      display: flex;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+
+      .header-profile-status, .header-links, .header-links-chat {
+        display: flex;
+        align-items: center;
+      }
+
+      .header-links-item {
+        margin-bottom: 0;
+      }
+    }
+  }
 }
 
 .chat-col {

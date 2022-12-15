@@ -60,20 +60,20 @@ if (mediaQuery1180.matches) {
   // desktop containers
   let logoDesk = document.getElementsByClassName("nav-logo")[0];
   let steamBtnDesk = document.getElementsByClassName("header-btn-steam")[0];
-  let chatBtnDesk = document.getElementsByClassName("header-links-chat")[0];
-  let topHeaderTabsContent = document.getElementsByClassName("header-links")[0];
+  let topHeaderLinks = document.getElementsByClassName("header-links")[0];
+  let topHeaderRight = document.getElementsByClassName("header-right")[0];
 
   // new containers
   let logoMob = document.getElementsByClassName("header-mob-logo")[0];
   let steamBtnMob = document.getElementsByClassName("header-mob-btn-steam")[0];
-  let chatBtnMob = document.getElementsByClassName("header-mob-btn-chat")[0];
-  let topHeaderTabsMobileContent = document.getElementsByClassName("header-mob-inner")[0];
+  let topHeaderLinksMob = document.getElementsByClassName("header-mob-inner")[0];
+  let chatMob = document.getElementsByClassName("chat-mob-control")[0];
 
   // moving the desktop elements to new containers
   logoMob.appendChild(logoDesk);
   steamBtnMob.appendChild(steamBtnDesk);
-  chatBtnMob.appendChild(chatBtnDesk);
-  topHeaderTabsMobileContent.appendChild(topHeaderTabsContent);
+  topHeaderLinksMob.appendChild(topHeaderLinks);
+  chatMob.appendChild(topHeaderRight);
 
   document.querySelector(".header-mob-burger")?.addEventListener("click", function () {
     this.classList.toggle("active");

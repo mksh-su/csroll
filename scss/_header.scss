@@ -55,6 +55,23 @@
       right: 1.25rem;
       z-index: 9999;
     }
+
+    &-burger {
+      display: none;
+
+      @media (max-width: 1180px) {
+        display: inline-block;
+      }
+    }
+  }
+  &-right {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 1180px) {
+      padding: 1rem 1.25rem;
+      flex-grow: 1;
+    }
   }
   &-links {
     display: flex;
@@ -74,7 +91,7 @@
         max-width: 768px;
 
         span {
-          margin-left: .35rem;
+          margin-left: 0.35rem;
         }
 
         .btn-icon {
@@ -91,10 +108,13 @@
     &-chat {
       cursor: pointer;
       margin-left: 2.5rem;
-      display: none;
 
       &.chat-close {
         transform: rotate(-180deg);
+      }
+
+      @media (max-width: 1180px) {
+        display: none;
       }
     }
     &-item {
@@ -247,7 +267,8 @@
   }
 
   &-mob {
-    &-burger, &-chat-btn {
+    &-burger,
+    &-chat-btn {
       display: none;
       z-index: 2;
       background-color: rgba($color-blue, 0.1);
@@ -258,7 +279,7 @@
       border-radius: 1rem;
       min-width: 3rem;
       height: 3rem;
-      transition: .3s;
+      transition: 0.3s;
 
       &.active {
         background-color: $color-blue;
