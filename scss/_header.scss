@@ -31,15 +31,30 @@
         position: absolute;
         top: 0;
         left: 0;
-        background: rgba(69, 84, 137, 0.2);
-        backdrop-filter: blur(10px);
+        background-color: rgba(69, 84, 137, 0.2);
         width: 100vw;
         height: 100vh;
         max-height: unset;
 
+        &:before {
+          content: "";
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
+          background-color: rgba(69, 84, 137, 0.2);
+          width: 100vw;
+          height: 100vh;
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
         .header-links {
           display: block;
           padding: 1.875rem 1.25rem;
+          z-index: 2;
+          position: relative;
+          background: linear-gradient(180deg, rgba(35, 44, 75, 0.9) 72.81%, rgba(35, 44, 75, 0) 100%);
         }
 
         .header-mob-close {
