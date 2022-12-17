@@ -77,13 +77,13 @@ document.addEventListener("click", function (e) {
 //   }
 // }, 5000);
 
-
 // tablet
 const mediaQuery1180 = window.matchMedia("(max-width: 1180px)");
 if (mediaQuery1180.matches) {
   // desktop containers
   let logoDesk = document.getElementsByClassName("nav-logo")[0];
   let steamBtnDesk = document.getElementsByClassName("header-btn-steam")[0];
+  let profileDesk = document.getElementsByClassName("header-profile-options")[0];
   let topHeaderLinks = document.getElementsByClassName("header-links")[0];
   let topHeaderRight = document.getElementsByClassName("header-right")[0];
 
@@ -95,15 +95,20 @@ if (mediaQuery1180.matches) {
 
   // moving the desktop elements to new containers
   logoMob.appendChild(logoDesk);
-  steamBtnMob.appendChild(steamBtnDesk);
+  if (steamBtnDesk) {
+    steamBtnMob.appendChild(steamBtnDesk);
+  }
   topHeaderLinksMob.appendChild(topHeaderLinks);
+  if (profileDesk) {
+    topHeaderLinksMob.appendChild(profileDesk);
+  }
   chatMob.appendChild(topHeaderRight);
 
   document.querySelector(".header-mob-burger")?.addEventListener("click", function () {
     this.classList.toggle("active");
     document.querySelector(".header-mob-inner").classList.toggle("active");
     document.body.classList.toggle("no-scroll");
-  });  
+  });
 
   document.querySelector(".header-mob-close")?.addEventListener("click", function () {
     document.querySelector(".header-mob-burger").classList.toggle("active");
@@ -113,7 +118,7 @@ if (mediaQuery1180.matches) {
 
   document.querySelector(".nav-mob-burger")?.addEventListener("click", function () {
     this.classList.toggle("active");
-  });  
+  });
 }
 
 // mobile
