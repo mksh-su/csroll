@@ -82,7 +82,7 @@ const mediaQuery1180 = window.matchMedia("(max-width: 1180px)");
 if (mediaQuery1180.matches) {
   // desktop containers
   let logoDesk = document.getElementsByClassName("nav-logo")[0];
-  let steamBtnDesk = document.getElementsByClassName("header-btn-steam")[0];
+  let steamBtnDesk = document.querySelector(".header .header-btn-steam");
   let profileDesk = document.getElementsByClassName("header-profile-options")[0];
   let topHeaderLinks = document.getElementsByClassName("header-links")[0];
   let topHeaderRight = document.getElementsByClassName("header-right")[0];

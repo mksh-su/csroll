@@ -974,3 +974,71 @@
     border-radius: 0.1875rem;
   }
 }
+
+.item {
+  background: $color-placeholder;
+  border-radius: 1rem;
+  padding: 0.75rem;
+
+  &-row {
+    overflow: auto;
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  &-img {
+    position: relative;
+    text-align: center;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: block;
+      opacity: 0.15;
+      filter: blur(1.25rem);
+      z-index: 1;
+      border-radius: 50%;
+    }
+
+    &-purple {
+      &:before {
+        background-color: $color-purple;
+      }
+    }
+
+    &-gold {
+      &:before {
+        background-color: $color-gold;
+      }
+    }
+
+    &-blue {
+      &:before {
+        background-color: $color-blue;
+      }
+    }
+
+    &-pic {
+      position: relative;
+      z-index: 2;
+      min-height: 90px;
+    }
+  }
+
+  &-name {
+    margin: 0;
+  }
+
+  &-badge {
+    &-row {
+      display: flex;
+    }
+    &-single {
+      &:last-of-type {
+        margin-left: auto;
+      }
+    }
+  }
+}
