@@ -1029,6 +1029,14 @@
 
   &-name {
     margin: 0;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 140%;
+    color: rgba(255, 255, 255, 0.5);
+    &-second {
+      color: white;
+      display: block;
+    }
   }
 
   &-badge {
@@ -1039,6 +1047,10 @@
       &:last-of-type {
         margin-left: auto;
       }
+      font-weight: 600;
+      font-size: 0.625rem;
+      line-height: 140%;
+      color: $color-text-body;
     }
   }
 }

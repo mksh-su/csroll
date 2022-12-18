@@ -80,6 +80,10 @@ document.addEventListener("click", function (e) {
 // tablet
 const mediaQuery1180 = window.matchMedia("(max-width: 1180px)");
 if (mediaQuery1180.matches) {
+  // chat
+  document.querySelector(".header-links-chat").classList.add("chat-close");
+  document.querySelector(".right-col").classList.add("chat-col-hidden");
+
   // desktop containers
   let logoDesk = document.getElementsByClassName("nav-logo")[0];
   let steamBtnDesk = document.querySelector(".header .header-btn-steam");
@@ -124,6 +128,5 @@ if (mediaQuery1180.matches) {
 // mobile
 const mediaQuery768 = window.matchMedia("(max-width: 768px)");
 if (mediaQuery768.matches) {
-  document.querySelector(".header-links-chat").classList.add("chat-close");
-  document.querySelector(".right-col").classList.add("chat-col-hidden");
+  // for 768
 }
