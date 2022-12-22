@@ -183,6 +183,10 @@ body {
   flex-grow: 1;
   transition: 0.3s;
 
+  @media (max-width: 1366px) {
+    max-height: 89vh;
+  }
+
   @media (max-width: 1180px) {
     min-width: 100%;
     width: 100%;

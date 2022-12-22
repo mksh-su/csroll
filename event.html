@@ -217,11 +217,24 @@
           </div>
           <div class="nav-country">
             <div class="nav-country-choice">
-              <img src="img/flags/china.svg" alt="" />
+              <img src="img/flags/china.svg" class="nav-country-choice-current" alt="" />
+            </div>
+            <div class="nav-country-list">
+              <img src="img/flags/china.svg" class="nav-country-choice-single nav-country-choice-single-chosen" alt="" />
+              <img src="img/flags/russia.svg" class="nav-country-choice-current-single" alt="" />
+              <img src="img/flags/turkey.svg" class="nav-country-choice-current-single" alt="" />
+              <img src="img/flags/usa.svg" class="nav-country-choice-current-single" alt="" />
+              <img src="img/flags/ukraine.svg" class="nav-country-choice-current-single" alt="" />
             </div>
           </div>
           <div class="nav-sound">
-            <img src="img/icons/volume-on.svg" alt="" />
+            <svg class="nav-sound-trigger" width="27" height="24" viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17 6.66667C17.828 7.28765 18.5 8.09287 18.9628 9.01858C19.4257 9.94428 19.6667 10.965 19.6667 12C19.6667 13.035 19.4257 14.0557 18.9628 14.9814C18.5 15.9071 17.828 16.7124 17 17.3333M20.6 2.66667C21.992 3.79154 23.1147 5.2135 23.886 6.82843C24.6572 8.44336 25.0575 10.2103 25.0575 12C25.0575 13.7897 24.6572 15.5566 23.886 17.1716C23.1147 18.7865 21.992 20.2085 20.6 21.3333M5 16H2.33333C1.97971 16 1.64057 15.8595 1.39052 15.6094C1.14048 15.3594 1 15.0203 1 14.6666V9.3333C1 8.97968 1.14048 8.64054 1.39052 8.39049C1.64057 8.14044 1.97971 7.99997 2.33333 7.99997H5L9.66667 1.99996C9.7832 1.77361 9.97686 1.5964 10.2127 1.50035C10.4484 1.40431 10.7108 1.39578 10.9523 1.47629C11.1939 1.5568 11.3986 1.72105 11.5296 1.93935C11.6606 2.15766 11.7093 2.41562 11.6667 2.66663V21.3333C11.7093 21.5843 11.6606 21.8423 11.5296 22.0606C11.3986 22.2789 11.1939 22.4431 10.9523 22.5236C10.7108 22.6042 10.4484 22.5956 10.2127 22.4996C9.97686 22.4035 9.7832 22.2263 9.66667 22L5 16Z" stroke="#576CB0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              
+            <form action="" class="nav-sound-slider">
+              <input type="range" id="volume-slider">
+            </form>
           </div>
           <div class="nav-settings">
             <a href=""><img src="img/icons/settings.svg" alt="" /></a>
@@ -528,22 +541,22 @@
                     </div>
                     <div class="event-keys-item">
                       <img src="img/icons/case-open.svg" class="event-keys-item-img" alt="" />
-                      <a href="" class="btn btn-primary">
-                        Открыть за 10
+                      <a href="" class="btn btn-secondary btn-disabled">
+                        Не хватает 12
                         <img src="img/icons/key-dynamic-color.png" class="btn-icon btn-icon-right" alt="" />
                       </a>
                     </div>
                     <div class="event-keys-item">
                       <img src="img/icons/case-open.svg" class="event-keys-item-img" alt="" />
-                      <a href="" class="btn btn-primary">
-                        Открыть за 10
+                      <a href="" class="btn btn-secondary btn-disabled">
+                        Не хватает 12
                         <img src="img/icons/key-dynamic-color.png" class="btn-icon btn-icon-right" alt="" />
                       </a>
                     </div>
                     <div class="event-keys-item">
                       <img src="img/icons/case-open.svg" class="event-keys-item-img" alt="" />
-                      <a href="" class="btn btn-primary">
-                        Открыть за 10
+                      <a href="" class="btn btn-secondary btn-disabled">
+                        Не хватает 12
                         <img src="img/icons/key-dynamic-color.png" class="btn-icon btn-icon-right" alt="" />
                       </a>
                     </div>
@@ -553,6 +566,27 @@
               <div class="event-best">
                 <h1 class="main-heading center">Лучшие ключники</h1>
                 <div class="event-player-grid">
+                  <div class="event-player">
+                    <div class="event-player-name">
+                      <div class="event-player-avatar"><img src="img/people/user-table-1.png" alt="" /></div>
+                      MonnArt
+                    </div>
+                    <div class="event-player-sum">2 442</div>
+                  </div>
+                  <div class="event-player">
+                    <div class="event-player-name">
+                      <div class="event-player-avatar"><img src="img/people/user-table-1.png" alt="" /></div>
+                      MonnArt
+                    </div>
+                    <div class="event-player-sum">2 442</div>
+                  </div>
+                  <div class="event-player">
+                    <div class="event-player-name">
+                      <div class="event-player-avatar"><img src="img/people/user-table-1.png" alt="" /></div>
+                      MonnArt
+                    </div>
+                    <div class="event-player-sum">2 442</div>
+                  </div>
                   <div class="event-player">
                     <div class="event-player-name">
                       <div class="event-player-avatar"><img src="img/people/user-table-1.png" alt="" /></div>

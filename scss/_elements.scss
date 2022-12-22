@@ -1051,6 +1051,13 @@
       font-size: 0.625rem;
       line-height: 140%;
       color: $color-text-body;
+      &-gold {
+        background: linear-gradient(45deg, #ca6d00 0%, #ffe27b 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+      }
     }
   }
 }
