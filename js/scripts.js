@@ -16,7 +16,7 @@ const minutesEl = document.querySelector("#m");
 const secondsEl = document.querySelector("#s");
 if (secondsEl) {
   // Update the count down every 1 second
-  var x = setInterval(function () {
+  let x = setInterval(function () {
     // Get todays date and time
     let now = new Date().getTime();
 
@@ -24,8 +24,8 @@ if (secondsEl) {
     let distance = countDownDate - now;
 
     // Time calculations for days, hours, minutes and seconds
-    //   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    //   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    //   let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    //   let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
@@ -56,7 +56,7 @@ accordionBtns.forEach((accordion) => {
 
 // modal
 document.addEventListener("click", function (e) {
-  var scrollbar = document.body.clientWidth - window.innerWidth + "px";
+  let scrollbar = document.body.clientWidth - window.innerWidth + "px";
   let $target = e.target;
   if ($target.closest('[data-toggle="modal"]')) {
     e.preventDefault();
@@ -90,14 +90,40 @@ volume?.addEventListener("change", function (e) {
 
 // country/lang change
 const countryContainer = document.querySelector(".nav-country");
-// countryContainer?.addEventListener("click", function (e) {
-//   this.classList.toggle("active");
-// });
 window.addEventListener("click", function (e) {
   if (countryContainer.contains(e.target)) {
     countryContainer.classList.toggle("active");
   } else {
     countryContainer.classList.remove("active");
+  }
+});
+
+// tabs
+window.addEventListener("load", function() {
+  // store tabs variable
+  const theTabs = document.querySelectorAll("ul.tabs-nav > li");
+
+  function theTabClicks(tabClickEvent) {
+      let clickedTab = tabClickEvent.currentTarget;
+      let tabParent = tabClickEvent.currentTarget.parentNode.parentNode.parentNode;
+      let theTabs = tabParent.querySelectorAll("ul.tabs-nav > li");
+      for (let i = 0; i < theTabs.length; i++) {
+          theTabs[i].classList.remove("active");
+      }
+      
+      clickedTab.classList.add("active");
+      tabClickEvent.preventDefault();
+      let contentPanes = tabParent.querySelectorAll(".tab-pane");
+      for (i = 0; i < contentPanes.length; i++) {
+          contentPanes[i].classList.remove("active");
+      }
+      let anchorReference = tabClickEvent.target;
+      let activePaneId = anchorReference.getAttribute("href");
+      let activePane = tabParent.querySelector(activePaneId);
+      activePane.classList.add("active");
+  }
+  for (i = 0; i < theTabs.length; i++) {
+      theTabs[i].addEventListener("click", theTabClicks)
   }
 });
 
