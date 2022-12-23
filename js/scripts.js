@@ -56,7 +56,6 @@ accordionBtns.forEach((accordion) => {
 
 // modal
 document.addEventListener("click", function (e) {
-  let scrollbar = document.body.clientWidth - window.innerWidth + "px";
   let $target = e.target;
   if ($target.closest('[data-toggle="modal"]')) {
     e.preventDefault();
@@ -67,15 +66,20 @@ document.addEventListener("click", function (e) {
     e.preventDefault();
     $target.closest(".modal").classList.remove("modal-show");
     document.body.classList.remove("no-scroll");
+  } else {
+    if (e.target.classList.contains("modal")) {
+      $target.closest(".modal").classList.remove("modal-show");
+      document.body.classList.remove("no-scroll");
+    }
   }
 });
 // modal auto open
-setTimeout(function () {
-  document.querySelector(".modal")?.classList.add("modal-show");
-  if (document.body.contains(document.querySelector(".modal"))) {
-    document.body.classList.add("no-scroll");
-  }
-}, 5000);
+// setTimeout(function () {
+//   document.querySelector(".modal")?.classList.add("modal-show");
+//   if (document.body.contains(document.querySelector(".modal"))) {
+//     document.body.classList.add("no-scroll");
+//   }
+// }, 5000);
 
 // volume change
 const soundContainer = document.querySelector(".nav-sound");

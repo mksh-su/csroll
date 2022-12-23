@@ -182,7 +182,7 @@
     }
   }
   .notification {
-    margin: 0 2.25rem 0 2rem;
+    margin: 0 2.25rem 0 1.5rem;
     @media (max-width: 1180px) {
       display: none;
     }
@@ -524,7 +524,10 @@
       bottom: 2.5rem;
       width: 100%;
       max-height: initial;
-      padding: 1rem 0;
+      padding: 0 0 1rem;
+    }
+    .tip {
+      display: none;
     }
     &.active {
       .nav-country-list {

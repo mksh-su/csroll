@@ -126,6 +126,7 @@ body {
     gap: 0.75rem;
     max-height: 100vh;
     flex-grow: 1;
+    align-items: flex-start;
 
     @media (max-width: 1180px) {
       max-height: unset;
@@ -182,6 +183,7 @@ body {
   max-height: 87vh;
   flex-grow: 1;
   transition: 0.3s;
+  align-items: flex-start;
 
   @media (max-width: 1366px) {
     max-height: 89vh;
