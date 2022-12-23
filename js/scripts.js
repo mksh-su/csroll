@@ -85,8 +85,14 @@ soundBtn?.addEventListener("click", function (e) {
 });
 const volume = document.getElementById("volume-slider");
 volume?.addEventListener("change", function (e) {
-  audio.volume = e.currentTarget.value / 100;
+  // audio.volume = e.currentTarget.value / 100;
 });
+for (let e of document.querySelectorAll('input[type="range"].slider-progress')) {
+  e.style.setProperty('--value', e.value);
+  e.style.setProperty('--min', e.min == '' ? '0' : e.min);
+  e.style.setProperty('--max', e.max == '' ? '100' : e.max);
+  e.addEventListener('input', () => e.style.setProperty('--value', e.value));
+}
 
 // country/lang change
 const countryContainer = document.querySelector(".nav-country");
@@ -111,31 +117,31 @@ countryItems.forEach((countryItem) => {
 });
 
 // tabs
-window.addEventListener("load", function() {
+window.addEventListener("load", function () {
   // store tabs variable
   const theTabs = document.querySelectorAll("ul.tabs-nav > li");
 
   function theTabClicks(tabClickEvent) {
-      let clickedTab = tabClickEvent.currentTarget;
-      let tabParent = tabClickEvent.currentTarget.parentNode.parentNode.parentNode;
-      let theTabs = tabParent.querySelectorAll("ul.tabs-nav > li");
-      for (let i = 0; i < theTabs.length; i++) {
-          theTabs[i].classList.remove("active");
-      }
-      
-      clickedTab.classList.add("active");
-      tabClickEvent.preventDefault();
-      let contentPanes = tabParent.querySelectorAll(".tab-pane");
-      for (i = 0; i < contentPanes.length; i++) {
-          contentPanes[i].classList.remove("active");
-      }
-      let anchorReference = tabClickEvent.target;
-      let activePaneId = anchorReference.getAttribute("href");
-      let activePane = tabParent.querySelector(activePaneId);
-      activePane.classList.add("active");
+    let clickedTab = tabClickEvent.currentTarget;
+    let tabParent = tabClickEvent.currentTarget.parentNode.parentNode.parentNode;
+    let theTabs = tabParent.querySelectorAll("ul.tabs-nav > li");
+    for (let i = 0; i < theTabs.length; i++) {
+      theTabs[i].classList.remove("active");
+    }
+
+    clickedTab.classList.add("active");
+    tabClickEvent.preventDefault();
+    let contentPanes = tabParent.querySelectorAll(".tab-pane");
+    for (i = 0; i < contentPanes.length; i++) {
+      contentPanes[i].classList.remove("active");
+    }
+    let anchorReference = tabClickEvent.target;
+    let activePaneId = anchorReference.getAttribute("href");
+    let activePane = tabParent.querySelector(activePaneId);
+    activePane.classList.add("active");
   }
   for (i = 0; i < theTabs.length; i++) {
-      theTabs[i].addEventListener("click", theTabClicks)
+    theTabs[i].addEventListener("click", theTabClicks);
   }
 });
 
