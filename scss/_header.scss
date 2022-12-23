@@ -503,6 +503,12 @@
       &:hover {
         opacity: 0.5;
       }
+
+      &-single {
+        &-chosen {
+          display: none;
+        }
+      }
     }
     &-list {
       display: none;

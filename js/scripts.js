@@ -90,12 +90,24 @@ volume?.addEventListener("change", function (e) {
 
 // country/lang change
 const countryContainer = document.querySelector(".nav-country");
+const countryItems = document.querySelectorAll(".nav-country-choice-single");
+const countryItemCurrent = document.querySelector(".nav-country-choice-current");
 window.addEventListener("click", function (e) {
   if (countryContainer.contains(e.target)) {
     countryContainer.classList.toggle("active");
   } else {
     countryContainer.classList.remove("active");
   }
+});
+countryItems.forEach((countryItem) => {
+  countryItem.addEventListener("click", () => {
+    countryItems.forEach(function (el) {
+      el.classList.remove("nav-country-choice-single-chosen");
+    });
+    countryItem.classList.add("nav-country-choice-single-chosen");
+    let countryItemSrc = countryItem.getAttribute("src");
+    countryItemCurrent.setAttribute("src", countryItemSrc);
+  });
 });
 
 // tabs
