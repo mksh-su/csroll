@@ -554,7 +554,7 @@
 
 .stats {
   &-container {
-    overflow-y: auto;
+    // overflow-y: auto;
 
     @media (max-width: 768px) {
       margin: 0 1.25rem;
@@ -601,6 +601,14 @@
         display: flex;
         margin-left: 2rem;
         align-items: center;
+
+        @media (max-width: 1600px) {
+          margin-left: 1.5rem;
+        }
+
+        @media (max-width: 1440px) {
+          margin-left: 1rem;
+        }
 
         img {
           margin-right: 1rem;
@@ -689,12 +697,44 @@
       gap: 1rem;
       margin-left: 2rem;
 
+      .tip {
+        min-width: 7rem;
+      }
+
       @media (max-width: 768px) {
         display: none;
       }
     }
     &-item {
-      max-height: 2.5rem;
+      padding: 0.5rem;
+      background: rgba($color-border, 0.1);
+      border-radius: 0.5rem;
+      min-width: 5.75rem;
+      text-align: center;
+      &-img {
+        max-height: 2.5rem;
+      }
+      &-price {
+        font-weight: 600;
+        font-size: 0.625rem;
+        line-height: 0.9375rem;
+        color: #ffffff;
+        text-align: left;
+        margin: 0;
+      }
+      &-bg {
+        position: relative;
+        overflow: hidden;
+        &:before {
+          content: "";
+          position: absolute;
+          width: 60px;
+          height: 60px;
+          left: 48px;
+          top: 48px;
+          filter: blur(30px);
+        }
+      }
     }
   }
   &-amount {
@@ -767,6 +807,29 @@
 
     @media (max-width: 768px) {
       display: none;
+    }
+  }
+}
+
+.bg {
+  &-blue {
+    &:before {
+      background: rgba(49, 102, 237, 0.5);
+    }
+  }
+  &-red {
+    &:before {
+      background: rgba(237, 49, 49, 0.5);
+    }
+  }
+  &-purple {
+    &:before {
+      background: rgba(121, 49, 237, 0.5);
+    }
+  }
+  &-pink {
+    &:before {
+      background: rgba(237, 49, 173, 0.5);
     }
   }
 }
@@ -846,10 +909,10 @@
   &-result {
     &-row {
       display: flex;
+      align-items: center;
       gap: 2.25rem;
       padding: 2rem;
       width: 100%;
-      overflow-x: auto;
       position: relative;
 
       + .stake-result-rorw {
@@ -858,6 +921,11 @@
 
       .game-profile-info {
         margin: 0;
+        &-text {
+          display: flex;
+          flex-direction: column-reverse;
+          gap: 0.25rem;
+        }
       }
       &-inner {
         display: flex;
@@ -873,7 +941,7 @@
         font-size: 0.875rem;
         line-height: 1.3125rem;
         color: $color-text-body;
-        margin-left: 2.5rem;
+        margin: 0 0 0 2.5rem;
       }
     }
   }
@@ -1197,8 +1265,9 @@
   box-shadow: 0px 0px 10px rgba(33, 41, 72, 0.6);
   border-radius: 0.5rem;
   font-size: 0.75rem;
+  font-weight: 600;
   padding: 0.5rem 1rem;
-  line-height: 1;
+  line-height: 1.2;
   max-height: initial;
   &-container {
     position: relative;
