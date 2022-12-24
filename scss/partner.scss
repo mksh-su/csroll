@@ -3,8 +3,14 @@
   &-table {
     .table-row {
       padding: 0.5625rem 1.5rem 0.5625rem 1.5rem;
+      @media (max-width: 480px) {
+        padding: 0.5rem;
+      }
       &-top {
         padding: 0.75rem 1.5rem;
+        @media (max-width: 480px) {
+          padding: 0.5rem;
+        }
       }
     }
     .table-heading {
@@ -25,6 +31,9 @@
     .table-item {
       font-weight: 600;
       color: white;
+      @media (max-width: 480px) {
+        font-size: 0.6rem;
+      }
       &:nth-of-type(1) {
         flex-basis: 20%;
       }
@@ -71,15 +80,24 @@
           font-size: 0.875rem;
           line-height: 1.3125rem;
           color: $color-gold;
+          @media (max-width: 480px) {
+            font-size: .6rem;
+          }
         }
         &-percent {
           font-size: 0.875rem;
           line-height: 1.3125rem;
+          @media (max-width: 480px) {
+            font-size: .6rem;
+          }
         }
         &-gets {
           font-size: 0.875rem;
           line-height: 1.3125rem;
           text-align: right;
+          @media (max-width: 480px) {
+            font-size: .6rem;
+          }
         }
       }
     }

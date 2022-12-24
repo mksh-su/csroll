@@ -18,6 +18,9 @@
     font-weight: 600;
     font-size: 0.875rem;
     line-height: 100%;
+    @media (max-width: 576px) {
+      font-size: .6rem;
+    }
   }
   &-item {
     &-number {
@@ -25,6 +28,10 @@
       font-size: 0.875rem;
       line-height: 100%;
       color: $color-text-body;
+      @media (max-width: 576px) {
+        font-size: .5rem;
+        white-space: nowrap;
+      }
     }
     &-avatar {
       position: relative;
@@ -35,17 +42,27 @@
       img {
         width: 100%;
       }
+      @media (max-width: 576px) {
+        min-width: 1.5rem;
+        min-height: 1.5rem;
+      }
     }
     &-user {
       font-weight: 600;
       font-size: 0.875rem;
       color: white;
+      @media (max-width: 576px) {
+        font-size: .5rem;
+      }
     }
     &-sum {
       font-weight: 600;
       font-size: 0.875rem;
       color: $color-gold;
       text-align: right;
+      @media (max-width: 576px) {
+        font-size: .5rem;
+      }
     }
     &-ratio {
       &-text {
@@ -57,11 +74,18 @@
         display: inline-block;
         background-color: rgba($color-border, .1);
         border-radius: 0.5rem;
+        @media (max-width: 576px) {
+          font-size: .5rem;
+          padding: .5rem;
+        }
       }
     }
     &-gun {
       img {
         max-height: 3.125rem;
+        @media (max-width: 576px) {
+          max-height: 2rem;
+        }
       }
     }
   }

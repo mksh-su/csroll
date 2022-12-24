@@ -18,16 +18,28 @@
       color: $color-text-body;
       width: 100%;
       display: block;
-      padding: 1rem .5rem;
-      background: rgba($color-border, .2);
-      transition: .3s;
+      padding: 1rem 0.5rem;
+      background: rgba($color-border, 0.2);
+      transition: 0.3s;
 
-      &:first-of-type {
-        border-radius: .5rem 0 0 .5rem;
+      @media (max-width: 480px) {
+        font-size: 0.75rem;
       }
-      &:last-of-type {
-        border-radius: 0 .5rem .5rem 0;
+    }
+
+    &:first-of-type {
+      a {
+        border-radius: 0.5rem 0 0 0.5rem;
       }
+    }
+    &:last-of-type {
+      a {
+        border-radius: 0 0.5rem 0.5rem 0;
+      }
+    }
+
+    + li {
+      border-left: 1px solid rgba($color-border, .4);
     }
 
     &.active {
